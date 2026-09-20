@@ -1,0 +1,39 @@
+{
+  "total_records": 502,
+  "anomaly_count": 26,
+  "anomaly_rate": 5.18,
+  "normal_count": 476,
+  "high_response_time_count": 10,
+  "server_error_count": 29,
+  "auth_failure_count": 29,
+  "database_error_count": 35,
+  "error_log_count": 53,
+  "anomalies_by_service": {
+    "UNKNOWN": 9,
+    "orders": 5,
+    "auth": 4,
+    "inventory": 3,
+    "payments": 3,
+    "notifications": 1,
+    "users": 1
+  },
+  "anomalies_by_event_type": {
+    "DATABASE_ERROR": 12,
+    "AUTH_FAILURE": 9,
+    "API_REQUEST": 3,
+    "SERVICE_STOP": 2
+  },
+  "anomalies_by_log_level": {
+    "WARN": 13,
+    "ERROR": 11,
+    "DEBUG": 2
+  },
+  "anomalies_by_status": {
+    "500.0": 4
+  },
+  "top_anomalous_endpoints": {
+    "/api/login": 1,
+    "/api/orders/create": 1,
+    "/api/payments": 1
+  }
+}

@@ -1,0 +1,753 @@
+============================================================
+RESUME-BASED INTERVIEW QUESTIONS
+DEDUPLICATED MASTER LIST
+============================================================
+
+============================================================
+1. RESUME / INTRODUCTION
+============================================================
+
+Q1. Tell me about yourself.
+Q2. Walk me through your resume.
+Q3. What kind of software systems have you built?
+Q4. Which project best represents your technical abilities?
+Q5. What was your role in your projects?
+Q6. Which project was the most technically challenging for you?
+Q7. What is the most important technical problem you have solved?
+Q8. Which technology are you most comfortable with?
+Q9. Which technology are you currently improving?
+Q10. What made you choose software development after studying Mathematics?
+Q11. How has your Mathematics background helped you in software development?
+Q12. Why did you pursue an MCA after a BSc in Mathematics?
+Q13. Which coursework from your MCA has been most useful in your projects?
+Q14. What did you learn from building real applications that you did not learn academically?
+
+============================================================
+2. JAVA
+============================================================
+
+Q15. Why did you choose Java for your backend applications?
+Q16. What are the four pillars of OOP?
+Q17. Explain encapsulation with an example from your project.
+Q18. Explain inheritance with an example.
+Q19. Explain polymorphism with an example.
+Q20. Explain abstraction with an example.
+Q21. What is the difference between an interface and an abstract class?
+Q22. What is method overloading?
+Q23. What is method overriding?
+Q24. What is the difference between == and equals()?
+Q25. Why should hashCode() be consistent with equals()?
+Q26. What is the difference between ArrayList and LinkedList?
+Q27. What is the difference between List, Set, and Map?
+Q28. How does HashMap work internally?
+Q29. What is the difference between HashMap and ConcurrentHashMap?
+Q30. What is exception handling in Java?
+Q31. What is the difference between checked and unchecked exceptions?
+Q32. What is try-with-resources?
+Q33. What is the difference between String, StringBuilder, and StringBuffer?
+Q34. What is garbage collection?
+Q35. What is multithreading?
+Q36. What is synchronization?
+Q37. What is the difference between process and thread?
+Q38. What is a race condition?
+Q39. How would you handle concurrent updates to the same record in Java?
+
+============================================================
+3. PYTHON
+============================================================
+
+Q40. Why did you use Python in LogFlow?
+Q41. What advantages does Python provide for data processing?
+Q42. What is the difference between a list, tuple, set, and dictionary?
+Q43. How does exception handling work in Python?
+Q44. What is the difference between a Python iterator and iterable?
+Q45. What is list comprehension?
+Q46. How would you process a very large dataset in Python?
+Q47. How would you improve the performance of a Python data-processing pipeline?
+
+============================================================
+4. SQL
+============================================================
+
+Q48. What is SQL?
+Q49. Why did you use SQL heavily in your projects?
+Q50. What is the difference between MySQL and PostgreSQL?
+Q51. Why did you choose PostgreSQL for your projects?
+Q52. What is a primary key?
+Q53. What is a foreign key?
+Q54. What is a UNIQUE constraint?
+Q55. What is a NOT NULL constraint?
+Q56. What is a CHECK constraint?
+Q57. What is a DEFAULT constraint?
+Q58. What is normalization?
+Q59. Explain 1NF, 2NF, and 3NF.
+Q60. What is denormalization and when would you use it?
+Q61. What is an INNER JOIN?
+Q62. What is a LEFT JOIN?
+Q63. What is a RIGHT JOIN?
+Q64. What is a FULL OUTER JOIN?
+Q65. What is a CROSS JOIN?
+Q66. What is a SELF JOIN?
+Q67. What is the difference between JOIN and EXISTS?
+Q68. What is the difference between UNION and UNION ALL?
+Q69. What is the difference between IN and EXISTS?
+Q70. What is the difference between NOT IN and NOT EXISTS?
+Q71. What is a subquery?
+Q72. What is a correlated subquery?
+Q73. What is a scalar subquery?
+Q74. What is a CTE?
+Q75. What is a recursive CTE?
+Q76. What is the difference between WHERE and HAVING?
+Q77. What is the SQL query execution order?
+Q78. What are aggregate functions?
+Q79. What is the difference between COUNT(*) and COUNT(column)?
+Q80. How does SQL handle NULL values?
+Q81. What is COALESCE()?
+Q82. What is NULLIF()?
+Q83. What are window functions?
+Q84. What is ROW_NUMBER()?
+Q85. What is the difference between RANK() and DENSE_RANK()?
+Q86. What is FIRST_VALUE()?
+Q87. What is LAST_VALUE()?
+Q88. What is NTILE()?
+Q89. What is the difference between ROWS and RANGE in a window frame?
+Q90. How do you find duplicate records?
+Q91. How do you handle duplicate rows produced by joins?
+Q92. How do you find the second-highest salary?
+Q93. How do you find the top N records?
+Q94. How do you calculate a running total?
+Q95. How would you calculate monthly trends using SQL?
+Q96. How would you find the most active users using SQL?
+Q97. How would you identify error spikes using SQL?
+Q98. How would you optimize a slow SQL query?
+Q99. What is an index?
+Q100. What is a composite index?
+Q101. What are the disadvantages of indexes?
+Q102. How do you decide which columns should be indexed?
+Q103. What is an execution plan?
+Q104. What is EXPLAIN ANALYZE in PostgreSQL?
+Q105. What is a database transaction?
+Q106. What are ACID properties?
+Q107. What is a dirty read?
+Q108. What is a non-repeatable read?
+Q109. What is a phantom read?
+Q110. What are transaction isolation levels?
+Q111. What is the difference between READ COMMITTED and REPEATABLE READ?
+Q112. What does SERIALIZABLE isolation provide?
+Q113. What is a deadlock?
+Q114. What is database locking?
+Q115. What is optimistic locking?
+Q116. What is pessimistic locking?
+
+============================================================
+5. DBMS / DATA MODELING
+============================================================
+
+Q117. What is DBMS?
+Q118. What is RDBMS?
+Q119. What is the difference between DBMS and RDBMS?
+Q120. What is a database schema?
+Q121. What is relational data modeling?
+Q122. How do you identify entities in a relational model?
+Q123. How do you represent one-to-one relationships?
+Q124. How do you represent one-to-many relationships?
+Q125. How do you represent many-to-many relationships?
+Q126. What is referential integrity?
+Q127. How do foreign keys maintain data integrity?
+Q128. How would you design a database for a recruitment platform?
+Q129. How would you design a database for a manufacturing system?
+Q130. How would you prevent inconsistent data across related tables?
+
+============================================================
+6. PANDAS / DATA CLEANING
+============================================================
+
+Q131. Why did you use Pandas?
+Q132. What is a Pandas DataFrame?
+Q133. What is a Pandas Series?
+Q134. How do you detect missing values in Pandas?
+Q135. How do you handle missing values?
+Q136. How do you detect duplicate records?
+Q137. How do you remove duplicates safely?
+Q138. How do you detect malformed records?
+Q139. How do you validate data types?
+Q140. How do you handle invalid records?
+Q141. How do you handle inconsistent data?
+Q142. How do you detect outliers?
+Q143. How do you keep track of records rejected during data cleaning?
+Q144. How do you verify that cleaning did not corrupt valid data?
+Q145. How do vectorized Pandas operations differ from row-by-row processing?
+Q146. How would you process data larger than available memory?
+
+============================================================
+7. ETL / DATA PIPELINES
+============================================================
+
+Q147. What is ETL?
+Q148. Explain the Extract phase using your LogFlow pipeline.
+Q149. Explain the Transform phase using your pipeline.
+Q150. Explain the Load phase using your pipeline.
+Q151. What is the complete flow of your LogFlow ETL pipeline?
+Q152. What happens to malformed records during ETL?
+Q153. How do you validate data before loading it?
+Q154. How do you prevent duplicate loading?
+Q155. What does idempotent processing mean?
+Q156. How would you make your pipeline idempotent?
+Q157. What happens if the pipeline fails halfway through?
+Q158. How would you recover from partial pipeline failure?
+Q159. What is batch processing?
+Q160. Why did you use batch loading in LogFlow?
+Q161. What is incremental processing?
+Q162. How would you process only newly arrived data?
+Q163. What is a watermark or high-water mark?
+Q164. How would you handle late-arriving records?
+Q165. How would you handle a source-schema change?
+Q166. How would you monitor an ETL pipeline?
+Q167. What statistics would you record for pipeline processing?
+Q168. How would you scale LogFlow for millions of records?
+
+============================================================
+8. ANOMALY DETECTION / SCIKIT-LEARN
+============================================================
+
+Q169. What is anomaly detection?
+Q170. Why is anomaly detection useful for application logs?
+Q171. What qualifies as an anomaly in LogFlow?
+Q172. How did you detect error spikes?
+Q173. What is a statistical threshold?
+Q174. How did you choose an anomaly threshold?
+Q175. What happens when an anomaly threshold is too sensitive?
+Q176. What happens when an anomaly threshold is too loose?
+Q177. What is a false positive in anomaly detection?
+Q178. What is a false negative in anomaly detection?
+Q179. How would you reduce false positives?
+Q180. How would you evaluate an anomaly detector?
+Q181. What is the difference between supervised and unsupervised anomaly detection?
+Q182. Which Scikit-learn methods did you use?
+Q183. Why did you choose those methods?
+Q184. What features can be extracted from application logs for anomaly detection?
+Q185. Why did you combine statistical thresholds with Scikit-learn?
+Q186. How would you distinguish legitimate traffic growth from an anomaly?
+Q187. How would you handle highly imbalanced anomaly data?
+Q188. How would you explain an anomaly detected by the system to a developer?
+
+============================================================
+9. SPRING BOOT
+============================================================
+
+Q189. What is Spring Boot?
+Q190. Why did you choose Spring Boot?
+Q191. What is dependency injection?
+Q192. What is inversion of control?
+Q193. What is a Spring Bean?
+Q194. What is ApplicationContext?
+Q195. What is @Component?
+Q196. What is @Service?
+Q197. What is @Repository?
+Q198. What is @RestController?
+Q199. What is constructor injection?
+Q200. Why is constructor injection commonly preferred?
+Q201. What is Spring Boot auto-configuration?
+Q202. How do you configure PostgreSQL in Spring Boot?
+Q203. How do you structure a Spring Boot application?
+Q204. What is the purpose of the controller layer?
+Q205. What is the purpose of the service layer?
+Q206. What is the purpose of the repository layer?
+Q207. How do you perform request validation in Spring Boot?
+Q208. How do you handle exceptions globally?
+Q209. What is @ControllerAdvice?
+Q210. How do you test Spring Boot applications?
+Q211. How do you debug a Spring Boot application?
+
+============================================================
+10. SPRING SECURITY / AUTHENTICATION
+============================================================
+
+Q212. What is authentication?
+Q213. What is authorization?
+Q214. What is the difference between authentication and authorization?
+Q215. What is JWT?
+Q216. Why did you use JWT?
+Q217. What are the three parts of a JWT?
+Q218. How is a JWT generated and verified?
+Q219. How do you handle JWT expiration?
+Q220. What is a refresh token?
+Q221. How would you implement token refresh?
+Q222. Can a JWT be revoked?
+Q223. What happens if the JWT signing secret is compromised?
+Q224. What is role-based access control?
+Q225. How did you implement RBAC?
+Q226. How do you restrict API endpoints by role?
+Q227. What is the difference between a role and a permission?
+Q228. How should passwords be stored?
+Q229. Why should passwords never be stored in plain text?
+Q230. What is password hashing?
+Q231. What is CORS?
+Q232. What is CSRF?
+Q233. How do you prevent SQL injection?
+Q234. How would you protect sensitive configuration values?
+
+============================================================
+11. SPRING DATA JPA / HIBERNATE
+============================================================
+
+Q235. What is JPA?
+Q236. What is Hibernate?
+Q237. What is the difference between JPA and Hibernate?
+Q238. What is ORM?
+Q239. What is an Entity in JPA?
+Q240. What is @Id?
+Q241. What is @GeneratedValue?
+Q242. What is JpaRepository?
+Q243. What is lazy loading?
+Q244. What is eager loading?
+Q245. What is the difference between LAZY and EAGER?
+Q246. What is the N+1 query problem?
+Q247. How do you solve the N+1 query problem?
+Q248. What is cascading in JPA?
+Q249. What is orphan removal?
+Q250. What is the persistence context?
+Q251. What is dirty checking?
+Q252. What is first-level cache?
+Q253. What is JPQL?
+Q254. What is the difference between JPQL and native SQL?
+Q255. How did you map entity relationships in your projects?
+Q256. How are transactions handled with JPA?
+Q257. How do you optimize JPA queries?
+
+============================================================
+12. REST API
+============================================================
+
+Q258. What is a REST API?
+Q259. What are the main principles of REST?
+Q260. What does statelessness mean in REST?
+Q261. Explain GET, POST, PUT, PATCH, and DELETE.
+Q262. What is the difference between PUT and PATCH?
+Q263. What is an HTTP status code?
+Q264. When would you return 200?
+Q265. When would you return 201?
+Q266. When would you return 400?
+Q267. When would you return 401?
+Q268. When would you return 403?
+Q269. When would you return 404?
+Q270. When would you return 409?
+Q271. When would you return 500?
+Q272. What does idempotency mean for an API?
+Q273. How do you design a REST endpoint?
+Q274. How do you validate incoming API data?
+Q275. How do you structure API error responses?
+Q276. How do you test REST APIs with Postman?
+Q277. What APIs did you build for AthletiQ?
+Q278. What APIs did you build for SmartFactory?
+
+============================================================
+13. FASTAPI
+============================================================
+
+Q279. What is FastAPI?
+Q280. Why did you use FastAPI?
+Q281. Why did you use FastAPI instead of Spring Boot for the Python component?
+Q282. What is ASGI?
+Q283. What is asynchronous programming in Python?
+Q284. What is Pydantic?
+Q285. How does FastAPI validate requests?
+Q286. How do you handle exceptions in FastAPI?
+Q287. How does FastAPI communicate with databases?
+Q288. How did the FastAPI service integrate with your Java backend?
+Q289. What happens if the FastAPI service becomes unavailable?
+
+============================================================
+14. WEBSOCKET / SSE / REAL-TIME
+============================================================
+
+Q290. What is a real-time application?
+Q291. What is WebSocket?
+Q292. What is Server-Sent Events?
+Q293. What is the key difference between WebSocket and SSE?
+Q294. Why did you use WebSocket/SSE in AthletiQ?
+Q295. Why did you use SSE in SmartFactory?
+Q296. When would you choose WebSocket over SSE?
+Q297. When would you choose SSE over WebSocket?
+Q298. Is SSE one-way or two-way communication?
+Q299. Is WebSocket one-way or two-way communication?
+Q300. How does an SSE connection work?
+Q301. How does the frontend consume SSE events?
+Q302. What happens when a client disconnects?
+Q303. How does the client reconnect?
+Q304. How do you handle many concurrent real-time connections?
+Q305. How would you scale a real-time system?
+Q306. How would Redis help with distributed real-time events?
+
+============================================================
+15. REDIS
+============================================================
+
+Q307. What is Redis?
+Q308. Why did you include Redis in your technology stack?
+Q309. What data did you store or plan to store in Redis?
+Q310. What is caching?
+Q311. What is the difference between Redis and PostgreSQL?
+Q312. What is cache invalidation?
+Q313. What is TTL?
+Q314. What Redis data structures do you know?
+Q315. What is a Redis Hash?
+Q316. What is a Redis Set?
+Q317. What is a Redis Sorted Set?
+Q318. What happens if Redis becomes unavailable?
+Q319. How would you prevent stale cached data from causing incorrect results?
+
+============================================================
+16. ATHLETIQ
+============================================================
+
+Q320. What is AthletiQ?
+Q321. What real-world problem does AthletiQ solve?
+Q322. Who are the main users of AthletiQ?
+Q323. Explain the complete architecture of AthletiQ.
+Q324. Why did you use Java, Spring Boot, React, Python/FastAPI, PostgreSQL, and Redis together?
+Q325. What are the main entities in the AthletiQ database?
+Q326. What relationships exist between those entities?
+Q327. How does a player apply for an event?
+Q328. How is player eligibility validated?
+Q329. What rules are used for eligibility?
+Q330. How are evaluators assigned?
+Q331. How does evaluator scoring work?
+Q332. How are candidates ranked?
+Q333. How does the shortlisting process work?
+Q334. How does candidate progression work after evaluation?
+Q335. How do you prevent duplicate applications?
+Q336. How do you prevent an ineligible player from progressing?
+Q337. What roles exist in AthletiQ?
+Q338. How is RBAC enforced in AthletiQ?
+Q339. How does JWT authentication work in AthletiQ?
+Q340. What real-time events are sent to users?
+Q341. Why was real-time communication necessary in AthletiQ?
+Q342. How does the AI-assisted candidate analysis work?
+Q343. What input does the candidate-analysis module receive?
+Q344. What output does it generate?
+Q345. How are strengths and weaknesses determined?
+Q346. How is the candidate score generated?
+Q347. How does candidate comparison work?
+Q348. Why did you use AI-assisted analysis instead of only rule-based scoring?
+Q349. What parts of AthletiQ are rule-based?
+Q350. How do the rule-based and AI-assisted parts interact?
+Q351. How would you validate an AI-generated candidate score?
+Q352. How would you address inconsistent AI-generated results?
+Q353. How would you handle simultaneous evaluator submissions?
+Q354. How did you test AthletiQ using JUnit?
+Q355. How did you test its authentication and authorization?
+Q356. How did you test eligibility and ranking logic?
+Q357. What was the hardest technical problem in AthletiQ?
+Q358. What would you redesign if you rebuilt AthletiQ?
+
+============================================================
+17. SMARTFACTORY
+============================================================
+
+Q359. What is SmartFactory?
+Q360. Why did you simulate a mango beverage factory?
+Q361. Explain the architecture of SmartFactory.
+Q362. How did you model 500 machines?
+Q363. How are the 10 production lines represented?
+Q364. What is a production order?
+Q365. How is a production order created?
+Q366. What is recipe-based validation?
+Q367. How are materials validated?
+Q368. How is packaging validated?
+Q369. How is machine availability validated?
+Q370. What determines production readiness?
+Q371. Explain the 10-stage production workflow.
+Q372. How are production batches tracked?
+Q373. How is material movement tracked?
+Q374. How is verification status represented?
+Q375. How do you prevent invalid stage transitions?
+Q376. What happens when a required machine becomes unavailable?
+Q377. How are machine states represented?
+Q378. What telemetry does each machine generate?
+Q379. How is machine telemetry handled?
+Q380. How are machine alerts generated?
+Q381. What operational updates are sent to users?
+Q382. Why did you use SSE for SmartFactory?
+Q383. How does the frontend receive machine-state changes?
+Q384. How did you handle concurrent production updates?
+Q385. How did database transactions help with production operations?
+Q386. How did you use Flyway?
+Q387. Why are database migrations necessary?
+Q388. What happens when a Flyway migration fails?
+Q389. How did Docker help you develop SmartFactory?
+Q390. How would you scale SmartFactory?
+Q391. How would you simulate machine failures?
+Q392. What was the most difficult part of SmartFactory?
+
+============================================================
+18. LOGFLOW
+============================================================
+
+Q393. What is LogFlow?
+Q394. Why did you choose application logs for the project?
+Q395. What does a raw log record look like?
+Q396. How are raw logs ingested?
+Q397. How are logs parsed into structured records?
+Q398. How do you identify malformed records?
+Q399. How do you identify missing values?
+Q400. How do you detect duplicate log entries?
+Q401. What validation rules did you implement?
+Q402. What happens to invalid records?
+Q403. How do you ensure invalid records do not disappear silently?
+Q404. What processing statistics do you generate?
+Q405. Why did you use PostgreSQL for the pipeline?
+Q406. Why did you use batch loading?
+Q407. What PostgreSQL indexes did you create?
+Q408. Why did you choose those indexes?
+Q409. What SQL analytics did you perform on the logs?
+Q410. How did you analyze error trends?
+Q411. How did you analyze API activity?
+Q412. How did you analyze user behavior?
+Q413. How did you analyze application performance?
+Q414. How do you detect an error spike?
+Q415. How are anomaly reports generated?
+Q416. What information is contained in the data-quality report?
+Q417. What information is contained in the anomaly report?
+Q418. What happens if the same log data is processed twice?
+Q419. How would you process streaming logs instead of batch logs?
+Q420. How would you handle out-of-order log events?
+Q421. How would you scale LogFlow to millions of records?
+Q422. What was the hardest technical part of LogFlow?
+
+============================================================
+19. POSTGRESQL
+============================================================
+
+Q423. Which PostgreSQL features did you use?
+Q424. How does PostgreSQL handle concurrent transactions?
+Q425. What is MVCC?
+Q426. How does PostgreSQL indexing work?
+Q427. What is a B-tree index?
+Q428. How would you optimize a large PostgreSQL table?
+Q429. How would you handle millions of rows efficiently?
+Q430. How would you troubleshoot a slow PostgreSQL query?
+Q431. How would you back up and restore a PostgreSQL database?
+
+============================================================
+20. MYSQL
+============================================================
+
+Q432. What experience do you have with MySQL?
+Q433. What are the practical differences between MySQL and PostgreSQL?
+Q434. Which SQL concepts remain the same across both databases?
+Q435. What PostgreSQL features might not be directly portable to MySQL?
+Q436. When would you choose MySQL instead of PostgreSQL?
+
+============================================================
+21. REACT
+============================================================
+
+Q437. Why did you use React?
+Q438. What is a React component?
+Q439. What is the difference between props and state?
+Q440. What are React hooks?
+Q441. What does useState do?
+Q442. What does useEffect do?
+Q443. How does React communicate with your backend APIs?
+Q444. How do you handle API loading and error states?
+Q445. How is authentication handled on the frontend?
+Q446. How does the frontend send JWT credentials?
+Q447. How do you protect frontend routes?
+Q448. How does React consume real-time events?
+Q449. How would you improve React performance in a large application?
+
+============================================================
+22. GIT / GITHUB
+============================================================
+
+Q450. What is Git?
+Q451. What is the difference between Git and GitHub?
+Q452. What is a Git commit?
+Q453. What is a Git branch?
+Q454. What is a pull request?
+Q455. What is the difference between merge and rebase?
+Q456. How do you resolve merge conflicts?
+Q457. What is git stash?
+Q458. What is the difference between git reset and git revert?
+Q459. How do you organize Git work on a project?
+Q460. How would you recover accidentally deleted work in Git?
+
+============================================================
+23. DOCKER
+============================================================
+
+Q461. What is Docker?
+Q462. Why did you use Docker?
+Q463. What is a Docker image?
+Q464. What is a Docker container?
+Q465. What is the difference between an image and a container?
+Q466. What is a Dockerfile?
+Q467. What is Docker Compose?
+Q468. How would you containerize a Spring Boot application?
+Q469. How would containers communicate with PostgreSQL?
+Q470. How do you persist PostgreSQL data in Docker?
+Q471. How do you pass environment variables to containers?
+Q472. What happens when a container restarts?
+Q473. How would you debug a crashing container?
+Q474. How would you deploy your Dockerized application?
+
+============================================================
+24. LINUX
+============================================================
+
+Q475. Which Linux commands do you commonly use?
+Q476. How do you inspect running processes?
+Q477. How do you check CPU and memory usage?
+Q478. How do you inspect application logs?
+Q479. How do you find which process is using a port?
+Q480. How do you terminate a process?
+Q481. What does chmod do?
+Q482. How do you search text using grep?
+Q483. What is curl used for?
+Q484. How would you troubleshoot a service running on Linux?
+
+============================================================
+25. POSTMAN
+============================================================
+
+Q485. Why do you use Postman?
+Q486. How do you test a REST endpoint using Postman?
+Q487. How do you test JWT authentication with Postman?
+Q488. How do you test unauthorized requests?
+Q489. How do you test invalid input?
+Q490. How do you test API error responses?
+Q491. How do you test edge cases in an API?
+Q492. How do you organize Postman collections?
+
+============================================================
+26. JUNIT / TESTING
+============================================================
+
+Q493. What is JUnit?
+Q494. Why did you use JUnit in AthletiQ?
+Q495. What is unit testing?
+Q496. What is integration testing?
+Q497. What is the difference between unit and integration testing?
+Q498. Which components of your backend would you unit test?
+Q499. How would you test the service layer?
+Q500. How would you test the controller layer?
+Q501. How would you test database-related functionality?
+Q502. How would you mock dependencies?
+Q503. What is Mockito?
+Q504. How would you test authentication and authorization?
+Q505. How would you test a failure scenario?
+Q506. What is regression testing?
+
+============================================================
+27. SOFTWARE DESIGN / ARCHITECTURE
+============================================================
+
+Q507. What architecture did you use in your backend projects?
+Q508. Why did you separate controller, service, and repository layers?
+Q509. What is separation of concerns?
+Q510. What is loose coupling?
+Q511. What is high cohesion?
+Q512. What is modularity?
+Q513. Which design patterns have you used?
+Q514. How does dependency injection improve design?
+Q515. How do you design software for maintainability?
+Q516. How do you design software for scalability?
+Q517. How do you handle failures between different components?
+Q518. How would you monitor a production application?
+Q519. What logs and metrics would you collect?
+Q520. What architectural trade-offs did you make in your projects?
+
+============================================================
+28. PERFORMANCE / SCALABILITY
+============================================================
+
+Q521. What is latency?
+Q522. What is throughput?
+Q523. What are common causes of slow APIs?
+Q524. How can database queries affect API latency?
+Q525. How can caching improve application performance?
+Q526. What are the drawbacks of caching?
+Q527. How would you improve a slow Spring Boot endpoint?
+Q528. How would you improve a slow database query?
+Q529. What is horizontal scaling?
+Q530. What is vertical scaling?
+Q531. What is load balancing?
+Q532. How do you identify an application bottleneck?
+Q533. How would you scale AthletiQ for a very large number of users?
+Q534. How would you scale SmartFactory for significantly more machines?
+Q535. How would you scale LogFlow for dramatically higher log volume?
+
+============================================================
+29. SCENARIO-BASED QUESTIONS
+============================================================
+
+Q536. What happens if PostgreSQL suddenly becomes unavailable?
+Q537. What happens if Redis becomes unavailable?
+Q538. What happens if the AI-assisted analysis service fails?
+Q539. What happens if a client loses its SSE connection?
+Q540. What happens if two users update the same record simultaneously?
+Q541. What happens if the same API request is submitted twice?
+Q542. What happens if a user submits invalid data?
+Q543. What happens if the server crashes during a database transaction?
+Q544. What happens if a production machine fails during an active order?
+Q545. What happens if machine telemetry stops arriving?
+Q546. What happens if LogFlow receives malformed logs at high volume?
+Q547. What happens if the anomaly detector suddenly generates too many alerts?
+Q548. How would you investigate a sudden increase in API response time?
+Q549. How would you investigate a sudden increase in database load?
+Q550. How would you investigate a sudden increase in application errors?
+
+============================================================
+30. PROJECT OWNERSHIP / INTERVIEW CROSS-CHECK
+============================================================
+
+Q551. Did you build these projects yourself?
+Q552. Which parts of each project did you personally implement?
+Q553. Can you explain one complete request from React to PostgreSQL and back?
+Q554. Can you explain one complete authentication flow?
+Q555. Can you explain one complete database transaction in your project?
+Q556. Can you explain one complete SSE/WebSocket event flow?
+Q557. Can you explain one complete ETL record lifecycle?
+Q558. Can you explain one complete anomaly-detection lifecycle?
+Q559. Can you draw the architecture of AthletiQ?
+Q560. Can you draw the architecture of SmartFactory?
+Q561. Can you draw the LogFlow pipeline?
+Q562. Can you draw the database schema of one of your projects?
+Q563. Can you explain one important API endpoint line by line?
+Q564. Can you explain one difficult bug you personally fixed?
+Q565. What technical decision would you change if you rebuilt your project?
+Q566. What limitation currently exists in your project?
+Q567. What would you add next to improve the project?
+Q568. Which part of your project are you most prepared to demonstrate live?
+
+============================================================
+31. EDUCATION / HR
+============================================================
+
+Q569. Why did you choose an MCA?
+Q570. Why did you choose MIT-WPU?
+Q571. What did your Mathematics degree teach you that is useful in programming?
+Q572. Which academic subject do you enjoy most?
+Q573. Which academic subject was hardest for you?
+Q574. Why are you interested in backend development?
+Q575. Why are you interested in full-stack development?
+Q576. Why are you interested in data engineering or analytics?
+Q577. What type of software role are you targeting?
+Q578. Why are you interested in this role?
+Q579. Why should we hire you?
+Q580. What are your strongest technical skills?
+Q581. What technical skill are you currently trying to improve?
+Q582. Tell me about a technical mistake you made and what you learned.
+Q583. Tell me about a difficult problem you solved.
+Q584. How do you learn an unfamiliar technology?
+Q585. How do you debug when you do not know the cause of the problem?
+Q586. How do you prioritize multiple technical tasks?
+Q587. How do you handle changing requirements?
+Q588. How do you respond to code review feedback?
+Q589. What are your short-term career goals?
+Q590. What are your long-term career goals?
+
+============================================================
+TOTAL: 590 UNIQUE QUESTIONS
+============================================================

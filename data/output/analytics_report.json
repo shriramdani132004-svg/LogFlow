@@ -1,0 +1,834 @@
+{
+  "overall_summary": {
+    "total_records": 502,
+    "earliest_timestamp": "2026-09-20T08:00:00.271000",
+    "latest_timestamp": "2026-09-20T10:16:00"
+  },
+  "log_level_distribution": [
+    {
+      "log_level": "INFO",
+      "event_count": 302,
+      "pct": 60.16
+    },
+    {
+      "log_level": "WARN",
+      "event_count": 97,
+      "pct": 19.32
+    },
+    {
+      "log_level": "ERROR",
+      "event_count": 53,
+      "pct": 10.56
+    },
+    {
+      "log_level": "DEBUG",
+      "event_count": 50,
+      "pct": 9.96
+    }
+  ],
+  "event_type_distribution": [
+    {
+      "event_type": "API_REQUEST",
+      "event_count": 188,
+      "pct": 37.45
+    },
+    {
+      "event_type": "DATABASE_QUERY",
+      "event_count": 86,
+      "pct": 17.13
+    },
+    {
+      "event_type": "USER_LOGIN",
+      "event_count": 59,
+      "pct": 11.75
+    },
+    {
+      "event_type": "CACHE_ACCESS",
+      "event_count": 41,
+      "pct": 8.17
+    },
+    {
+      "event_type": "USER_LOGOUT",
+      "event_count": 36,
+      "pct": 7.17
+    },
+    {
+      "event_type": "DATABASE_ERROR",
+      "event_count": 35,
+      "pct": 6.97
+    },
+    {
+      "event_type": "AUTH_FAILURE",
+      "event_count": 29,
+      "pct": 5.78
+    },
+    {
+      "event_type": "SERVICE_START",
+      "event_count": 20,
+      "pct": 3.98
+    },
+    {
+      "event_type": "SERVICE_STOP",
+      "event_count": 8,
+      "pct": 1.59
+    }
+  ],
+  "service_distribution": [
+    {
+      "service": null,
+      "event_count": 165,
+      "pct": 32.87
+    },
+    {
+      "service": "users",
+      "event_count": 62,
+      "pct": 12.35
+    },
+    {
+      "service": "auth",
+      "event_count": 62,
+      "pct": 12.35
+    },
+    {
+      "service": "inventory",
+      "event_count": 62,
+      "pct": 12.35
+    },
+    {
+      "service": "notifications",
+      "event_count": 54,
+      "pct": 10.76
+    },
+    {
+      "service": "payments",
+      "event_count": 49,
+      "pct": 9.76
+    },
+    {
+      "service": "orders",
+      "event_count": 48,
+      "pct": 9.56
+    }
+  ],
+  "status_distribution": [
+    {
+      "status": 200,
+      "event_count": 107,
+      "pct": 21.31
+    },
+    {
+      "status": 201,
+      "event_count": 27,
+      "pct": 5.38
+    },
+    {
+      "status": 400,
+      "event_count": 13,
+      "pct": 2.59
+    },
+    {
+      "status": 401,
+      "event_count": 3,
+      "pct": 0.6
+    },
+    {
+      "status": 404,
+      "event_count": 10,
+      "pct": 1.99
+    },
+    {
+      "status": 500,
+      "event_count": 29,
+      "pct": 5.78
+    },
+    {
+      "status": null,
+      "event_count": 313,
+      "pct": 62.35
+    }
+  ],
+  "status_class_distribution": [
+    {
+      "status_class": "2xx",
+      "event_count": 134,
+      "pct": 26.69
+    },
+    {
+      "status_class": "4xx",
+      "event_count": 26,
+      "pct": 5.18
+    },
+    {
+      "status_class": "5xx",
+      "event_count": 29,
+      "pct": 5.78
+    },
+    {
+      "status_class": "other",
+      "event_count": 313,
+      "pct": 62.35
+    }
+  ],
+  "error_summary": {
+    "total_errors": 53,
+    "total_warnings": 97,
+    "auth_failures": 29,
+    "database_errors": 35
+  },
+  "response_time_summary": {
+    "avg_response_time_ms": 976.27,
+    "min_response_time_ms": 11,
+    "max_response_time_ms": 5000,
+    "samples": 189
+  },
+  "slowest_endpoints": [
+    {
+      "endpoint": "/api/users/update",
+      "request_count": 8,
+      "avg_response_time_ms": 1286.0,
+      "max_response_time_ms": 1854
+    },
+    {
+      "endpoint": "/api/notifications",
+      "request_count": 13,
+      "avg_response_time_ms": 1118.0,
+      "max_response_time_ms": 1985
+    },
+    {
+      "endpoint": "/api/orders",
+      "request_count": 12,
+      "avg_response_time_ms": 1103.08,
+      "max_response_time_ms": 1977
+    },
+    {
+      "endpoint": "/api/logout",
+      "request_count": 11,
+      "avg_response_time_ms": 1047.09,
+      "max_response_time_ms": 1790
+    },
+    {
+      "endpoint": "/api/payments/process",
+      "request_count": 10,
+      "avg_response_time_ms": 984.3,
+      "max_response_time_ms": 1860
+    },
+    {
+      "endpoint": "/api/users",
+      "request_count": 14,
+      "avg_response_time_ms": 971.0,
+      "max_response_time_ms": 1831
+    },
+    {
+      "endpoint": "/api/inventory",
+      "request_count": 9,
+      "avg_response_time_ms": 968.44,
+      "max_response_time_ms": 1949
+    },
+    {
+      "endpoint": "/api/payments",
+      "request_count": 12,
+      "avg_response_time_ms": 964.42,
+      "max_response_time_ms": 1552
+    },
+    {
+      "endpoint": "/api/notifications/send",
+      "request_count": 16,
+      "avg_response_time_ms": 962.75,
+      "max_response_time_ms": 1781
+    },
+    {
+      "endpoint": "/api/inventory/check",
+      "request_count": 17,
+      "avg_response_time_ms": 954.18,
+      "max_response_time_ms": 1939
+    }
+  ],
+  "most_used_endpoints": [
+    {
+      "endpoint": "/api/inventory/check",
+      "request_count": 17,
+      "avg_response_time_ms": 954.18
+    },
+    {
+      "endpoint": "/api/notifications/send",
+      "request_count": 16,
+      "avg_response_time_ms": 962.75
+    },
+    {
+      "endpoint": "/api/users/profile",
+      "request_count": 15,
+      "avg_response_time_ms": 932.2
+    },
+    {
+      "endpoint": "/api/users",
+      "request_count": 14,
+      "avg_response_time_ms": 971.0
+    },
+    {
+      "endpoint": "/api/notifications",
+      "request_count": 13,
+      "avg_response_time_ms": 1118.0
+    },
+    {
+      "endpoint": "/api/orders",
+      "request_count": 12,
+      "avg_response_time_ms": 1103.08
+    },
+    {
+      "endpoint": "/api/payments",
+      "request_count": 12,
+      "avg_response_time_ms": 964.42
+    },
+    {
+      "endpoint": "/api/logout",
+      "request_count": 11,
+      "avg_response_time_ms": 1047.09
+    },
+    {
+      "endpoint": "/api/inventory/update",
+      "request_count": 11,
+      "avg_response_time_ms": 905.09
+    },
+    {
+      "endpoint": "/api/register",
+      "request_count": 10,
+      "avg_response_time_ms": 928.1
+    }
+  ],
+  "service_performance": [
+    {
+      "service": "orders",
+      "total_count": 48,
+      "error_count": 9,
+      "avg_response_time_ms": 1043.63,
+      "max_response_time_ms": 5000
+    },
+    {
+      "service": "users",
+      "total_count": 62,
+      "error_count": 8,
+      "avg_response_time_ms": 1023.38,
+      "max_response_time_ms": 1929
+    },
+    {
+      "service": "auth",
+      "total_count": 62,
+      "error_count": 7,
+      "avg_response_time_ms": 944.87,
+      "max_response_time_ms": 1857
+    },
+    {
+      "service": "inventory",
+      "total_count": 62,
+      "error_count": 6,
+      "avg_response_time_ms": 943.05,
+      "max_response_time_ms": 1949
+    },
+    {
+      "service": "notifications",
+      "total_count": 54,
+      "error_count": 4,
+      "avg_response_time_ms": 1032.34,
+      "max_response_time_ms": 1985
+    },
+    {
+      "service": "payments",
+      "total_count": 49,
+      "error_count": 2,
+      "avg_response_time_ms": 869.64,
+      "max_response_time_ms": 1860
+    }
+  ],
+  "hourly_traffic": [
+    {
+      "hour": "2026-09-20T08:00:00",
+      "event_count": 500
+    },
+    {
+      "hour": "2026-09-20T10:00:00",
+      "event_count": 2
+    }
+  ],
+  "user_activity_summary": [
+    {
+      "user_id": "U1075",
+      "event_count": 8,
+      "pct": 2.56
+    },
+    {
+      "user_id": "U1069",
+      "event_count": 6,
+      "pct": 1.92
+    },
+    {
+      "user_id": "U1047",
+      "event_count": 6,
+      "pct": 1.92
+    },
+    {
+      "user_id": "U1052",
+      "event_count": 6,
+      "pct": 1.92
+    },
+    {
+      "user_id": "U1014",
+      "event_count": 6,
+      "pct": 1.92
+    },
+    {
+      "user_id": "U1020",
+      "event_count": 6,
+      "pct": 1.92
+    },
+    {
+      "user_id": "U1068",
+      "event_count": 6,
+      "pct": 1.92
+    },
+    {
+      "user_id": "U1092",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1094",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1016",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1042",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1062",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1051",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1056",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1081",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1073",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1089",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1049",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1084",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1057",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1018",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1097",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1007",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1050",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1058",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1036",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1098",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1070",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1029",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1071",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1048",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1031",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1017",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1000",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1006",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1013",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1087",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1010",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1008",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1088",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1083",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1086",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1025",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1072",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1076",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1099",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1019",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1035",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1082",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1085",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1065",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1024",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1090",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1043",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1054",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1077",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1080",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1055",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1011",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1059",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1027",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1091",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1030",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1028",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1061",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1004",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1033",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1041",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1003",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1022",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1026",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1034",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1064",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1039",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1063",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1040",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1078",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1021",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1009",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1067",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1012",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1045",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1093",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1074",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1001",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1046",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1002",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1079",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1096",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1038",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1066",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1005",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1044",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1023",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1053",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1060",
+      "event_count": 1,
+      "pct": 0.32
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+2026-09-20 08:00:00,271 | INFO | API_REQUEST | service=orders | endpoint=/api/orders/status | method=DELETE | status=200 | response_time_ms=1434 | user_id=U1043
+2026-09-20 08:00:00,618 | WARN | DATABASE_ERROR | service=notifications | error=Rate limit exceeded | query_time_ms=6869
+2026-09-20 08:00:00,886 | WARN | DATABASE_QUERY | service=payments | table=products | query_time_ms=87
+2026-09-20 08:00:01,295 | INFO | CACHE_ACCESS | key=config_cache | hit=false | ttl_sec=2664
+2026-09-20 08:00:01,594 | INFO | API_REQUEST | service=payments | endpoint=/api/payments/refund | method=GET | status=500 | response_time_ms=12 | user_id=U1097
+2026-09-20 08:00:01,932 | WARN | API_REQUEST | service=users | endpoint=/api/users/update | method=POST | status=200 | response_time_ms=1716 | user_id=U1085
+2026-09-20 08:00:02,285 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=DELETE | status=400 | response_time_ms=42 | user_id=U1000
+2026-09-20 08:00:02,858 | INFO | DATABASE_QUERY | service=auth | table=users | query_time_ms=346
+2026-09-20 08:00:03,085 | INFO | DATABASE_ERROR | service=notifications | error=Invalid request body | query_time_ms=9537
+2026-09-20 08:00:03,521 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=POST | status=200 | response_time_ms=1318 | user_id=U1051
+2026-09-20 08:00:05,450 | DEBUG | CACHE_ACCESS | key=product_list | hit=true | ttl_sec=3470
+2026-09-20 08:00:05,794 | ERROR | USER_LOGOUT | user_id=U1027 | session_duration_sec=4838
+2026-09-20 08:00:05,916 | INFO | API_REQUEST | service=auth | endpoint=/api/register | method=PUT | status=201 | response_time_ms=828 | user_id=U1086
+2026-09-20 08:00:06,106 | INFO | USER_LOGIN | user_id=U1058 | ip=116.99.196.127 | login_method=password
+2026-09-20 08:00:07,237 | INFO | AUTH_FAILURE | user_id=U1031 | reason=invalid_password
+2026-09-20 08:00:08,096 | INFO | USER_LOGIN | user_id=U1047 | ip=123.39.70.136 | login_method=password
+2026-09-20 08:00:08,974 | DEBUG | DATABASE_QUERY | service=payments | table=users | query_time_ms=121
+2026-09-20 08:00:09,254 | INFO | DATABASE_QUERY | service=auth | table=products | query_time_ms=452
+2026-09-20 08:00:10,063 | DEBUG | DATABASE_QUERY | service=users | table=products | query_time_ms=270
+2026-09-20 08:00:10,588 | WARN | API_REQUEST | service=users | endpoint=/api/users/profile | method=GET | status=200 | response_time_ms=1315 | user_id=U1051
+2026-09-20 08:00:10,668 | DEBUG | DATABASE_QUERY | service=orders | table=orders | query_time_ms=426
+2026-09-20 08:00:11,009 | WARN | API_REQUEST | service=users | endpoint=/api/users/profile | method=DELETE | status=500 | response_time_ms=376 | user_id=U1004
+2026-09-20 08:00:11,354 | INFO | DATABASE_QUERY | service=auth | table=payments | query_time_ms=109
+2026-09-20 08:00:12,036 | INFO | USER_LOGIN | user_id=U1052 | ip=136.193.179.140 | login_method=password
+2026-09-20 08:00:12,237 | INFO | AUTH_FAILURE | user_id=U1003 | reason=missing_credentials
+2026-09-20 08:00:13,122 | INFO | DATABASE_QUERY | service=auth | table=orders | query_time_ms=353
+2026-09-20 08:00:13,388 | INFO | SERVICE_START | service=notifications | message=Service started successfully
+2026-09-20 08:00:13,642 | WARN | SERVICE_START | service=users | message=Service started successfully
+2026-09-20 08:00:14,043 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=GET | status=200 | response_time_ms=597 | user_id=U1009
+2026-09-20 08:00:14,434 | INFO | AUTH_FAILURE | user_id=U1002 | reason=missing_credentials
+2026-09-20 08:00:14,647 | ERROR | USER_LOGOUT | user_id=U1029 | session_duration_sec=1367
+2026-09-20 08:00:15,881 | INFO | SERVICE_STOP | service=payments | message=Service shutting down
+2026-09-20 08:00:16,547 | ERROR | USER_LOGOUT | user_id=U1040 | session_duration_sec=1801
+2026-09-20 08:00:16,783 | WARN | API_REQUEST | service=auth | endpoint=/api/register | method=POST | status=201 | response_time_ms=1211 | user_id=U1071
+2026-09-20 08:00:17,493 | INFO | API_REQUEST | service=payments | endpoint=/api/payments/refund | method=GET | status=400 | response_time_ms=625 | user_id=U1064
+2026-09-20 08:00:18,315 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=POST | status=200 | response_time_ms=333 | user_id=U1056
+2026-09-20 08:00:18,437 | ERROR | DATABASE_QUERY | service=users | table=sessions | query_time_ms=243
+2026-09-20 08:00:19,291 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=GET | status=400 | response_time_ms=1804 | user_id=U1098
+2026-09-20 08:00:21,413 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory | method=POST | status=400 | response_time_ms=1949 | user_id=U1070
+2026-09-20 08:00:21,734 | INFO | API_REQUEST | service=orders | endpoint=/api/orders | method=GET | status=201 | response_time_ms=1476 | user_id=U1083
+2026-09-20 08:00:22,831 | ERROR | AUTH_FAILURE | user_id=U1075 | reason=invalid_password
+2026-09-20 08:00:23,375 | INFO | USER_LOGOUT | user_id=U1081 | session_duration_sec=137
+2026-09-20 08:00:24,927 | ERROR | API_REQUEST | service=orders | endpoint=/api/orders/create | method=POST | status=200 | response_time_ms=1610 | user_id=U1033
+2026-09-20 08:00:25,033 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=POST | status=200 | response_time_ms=1643 | user_id=U1049
+2026-09-20 08:00:26,384 | ERROR | DATABASE_QUERY | service=users | table=orders | query_time_ms=367
+2026-09-20 08:00:26,545 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=POST | status=200 | response_time_ms=604 | user_id=U1049
+2026-09-20 08:00:26,874 | INFO | API_REQUEST | service=payments | endpoint=/api/payments/process | method=PUT | status=200 | response_time_ms=114 | user_id=U1072
+2026-09-20 08:00:27,024 | DEBUG | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=DELETE | status=500 | response_time_ms=416 | user_id=U1009
+2026-09-20 08:00:27,263 | INFO | CACHE_ACCESS | key=auth_token | hit=false | ttl_sec=1876
+2026-09-20 08:00:27,722 | INFO | DATABASE_QUERY | service=inventory | table=payments | query_time_ms=346
+2026-09-20 08:00:28,185 | INFO | DATABASE_QUERY | service=inventory | table=users | query_time_ms=460
+2026-09-20 08:00:29,440 | WARN | DATABASE_QUERY | service=orders | table=payments | query_time_ms=318
+2026-09-20 08:00:29,860 | WARN | DATABASE_QUERY | service=orders | table=payments | query_time_ms=259
+2026-09-20 08:00:31,118 | INFO | CACHE_ACCESS | key=config_cache | hit=false | ttl_sec=1388
+2026-09-20 08:00:31,689 | INFO | API_REQUEST | service=auth | endpoint=/api/refresh-token | method=DELETE | status=401 | response_time_ms=1061 | user_id=U1075
+2026-09-20 08:00:32,753 | INFO | CACHE_ACCESS | key=user_session | hit=true | ttl_sec=2580
+2026-09-20 08:00:33,126 | INFO | USER_LOGIN | user_id=U1065 | ip=114.52.13.23 | login_method=password
+2026-09-20 08:00:33,596 | ERROR | USER_LOGIN | user_id=U1034 | ip=116.45.96.114 | login_method=password
+2026-09-20 08:00:33,916 | INFO | DATABASE_QUERY | service=notifications | table=sessions | query_time_ms=361
+2026-09-20 08:00:33,924 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=POST | status=200 | response_time_ms=701 | user_id=U1097
+2026-09-20 08:00:34,794 | INFO | API_REQUEST | service=orders | endpoint=/api/orders/status | method=DELETE | status=404 | response_time_ms=161 | user_id=U1057
+2026-09-20 08:00:35,468 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=DELETE | status=200 | response_time_ms=708 | user_id=U1020
+2026-09-20 08:00:35,779 | INFO | API_REQUEST | service=payments | endpoint=/api/payments/refund | method=GET | status=500 | response_time_ms=962 | user_id=U1036
+2026-09-20 08:00:35,917 | WARN | API_REQUEST | service=payments | endpoint=/api/payments/process | method=POST | status=500 | response_time_ms=1064 | user_id=U1071
+2026-09-20 08:00:36,087 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=POST | status=200 | response_time_ms=532 | user_id=U1026
+2026-09-20 08:00:36,611 | INFO | DATABASE_QUERY | service=notifications | table=orders | query_time_ms=43
+2026-09-20 08:00:37,023 | INFO | API_REQUEST | service=auth | endpoint=/api/register | method=POST | status=201 | response_time_ms=1375 | user_id=U1013
+2026-09-20 08:00:37,080 | WARN | SERVICE_START | service=inventory | message=Service started successfully
+2026-09-20 08:00:37,083 | INFO | DATABASE_QUERY | service=inventory | table=payments | query_time_ms=285
+2026-09-20 08:00:37,235 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=POST | status=200 | response_time_ms=1272 | user_id=U1094
+2026-09-20 08:00:37,782 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=DELETE | status=500 | response_time_ms=1217 | user_id=U1029
+2026-09-20 08:00:38,201 | INFO | USER_LOGIN | user_id=U1069 | ip=129.212.31.53 | login_method=password
+2026-09-20 08:00:38,869 | ERROR | API_REQUEST | service=auth | endpoint=/api/refresh-token | method=GET | status=200 | response_time_ms=714 | user_id=U1077
+2026-09-20 08:00:38,894 | WARN | API_REQUEST | service=auth | endpoint=/api/register | method=DELETE | status=201 | response_time_ms=1004 | user_id=U1077
+2026-09-20 08:00:40,625 | WARN | API_REQUEST | service=users | endpoint=/api/users | method=POST | status=201 | response_time_ms=690 | user_id=U1052
+2026-09-20 08:00:41,136 | ERROR | CACHE_ACCESS | key=cart_data | hit=true | ttl_sec=1918
+2026-09-20 08:00:41,281 | INFO | DATABASE_QUERY | service=orders | table=sessions | query_time_ms=480
+2026-09-20 08:00:41,381 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=DELETE | status=201 | response_time_ms=1451 | user_id=U1012
+2026-09-20 08:00:42,058 | WARN | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=POST | status=500 | response_time_ms=1120 | user_id=U1082
+2026-09-20 08:00:42,395 | INFO | API_REQUEST | service=payments | endpoint=/api/payments/process | method=DELETE | status=200 | response_time_ms=352 | user_id=U1055
+2026-09-20 08:00:42,526 | INFO | DATABASE_ERROR | service=inventory | error=Timeout waiting for response | query_time_ms=6536
+2026-09-20 08:00:43,219 | ERROR | SERVICE_START | service=orders | message=Service started successfully
+2026-09-20 08:00:43,613 | INFO | USER_LOGOUT | user_id=U1029 | session_duration_sec=6595
+2026-09-20 08:00:43,889 | DEBUG | API_REQUEST | service=inventory | endpoint=/api/inventory | method=GET | status=200 | response_time_ms=11 | user_id=U1042
+2026-09-20 08:00:44,836 | WARN | SERVICE_STOP | service=auth | message=Service shutting down
+2026-09-20 08:00:45,372 | INFO | DATABASE_QUERY | service=users | table=products | query_time_ms=51
+2026-09-20 08:00:47,775 | INFO | DATABASE_ERROR | service=notifications | error=Resource not found | query_time_ms=5476
+2026-09-20 08:00:47,983 | INFO | AUTH_FAILURE | user_id=U1050 | reason=invalid_password
+2026-09-20 08:00:48,072 | DEBUG | DATABASE_QUERY | service=payments | table=orders | query_time_ms=45
+2026-09-20 08:00:48,146 | INFO | USER_LOGOUT | user_id=U1023 | session_duration_sec=1629
+2026-09-20 08:00:49,075 | ERROR | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=GET | status=200 | response_time_ms=355 | user_id=U1075
+2026-09-20 08:00:49,840 | DEBUG | API_REQUEST | service=orders | endpoint=/api/orders/create | method=GET | status=201 | response_time_ms=456 | user_id=U1059
+2026-09-20 08:00:49,863 | ERROR | API_REQUEST | service=notifications | endpoint=/api/notifications | method=GET | status=201 | response_time_ms=485 | user_id=U1068
+2026-09-20 08:00:49,924 | INFO | CACHE_ACCESS | key=config_cache | hit=false | ttl_sec=2271
+2026-09-20 08:00:50,539 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=GET | status=400 | response_time_ms=1478 | user_id=U1074
+2026-09-20 08:00:51,835 | INFO | DATABASE_QUERY | service=inventory | table=payments | query_time_ms=197
+2026-09-20 08:00:52,847 | WARN | DATABASE_ERROR | service=inventory | error=Resource not found | query_time_ms=1920
+2026-09-20 08:00:53,425 | INFO | CACHE_ACCESS | key=product_list | hit=true | ttl_sec=1162
+2026-09-20 08:00:54,096 | INFO | DATABASE_QUERY | service=inventory | table=payments | query_time_ms=310
+2026-09-20 08:00:54,710 | WARN | DATABASE_QUERY | service=users | table=sessions | query_time_ms=30
+2026-09-20 08:00:55,223 | INFO | CACHE_ACCESS | key=cart_data | hit=true | ttl_sec=974
+2026-09-20 08:00:55,257 | INFO | USER_LOGIN | user_id=U1075 | ip=186.77.176.7 | login_method=password
+2026-09-20 08:00:55,399 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=DELETE | status=201 | response_time_ms=714 | user_id=U1054
+2026-09-20 08:00:56,061 | INFO | AUTH_FAILURE | user_id=U1014 | reason=account_locked
+2026-09-20 08:00:56,367 | ERROR | USER_LOGOUT | user_id=U1010 | session_duration_sec=2112
+2026-09-20 08:00:56,885 | DEBUG | USER_LOGIN | user_id=U1080 | ip=168.194.75.211 | login_method=password
+2026-09-20 08:00:59,184 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=DELETE | status=500 | response_time_ms=1139 | user_id=U1016
+2026-09-20 08:00:59,387 | DEBUG | USER_LOGOUT | user_id=U1019 | session_duration_sec=506
+2026-09-20 08:01:00,166 | DEBUG | DATABASE_QUERY | service=users | table=users | query_time_ms=311
+2026-09-20 08:01:00,281 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=PUT | status=200 | response_time_ms=731 | user_id=U1069
+2026-09-20 08:01:01,183 | DEBUG | USER_LOGIN | user_id=U1027 | ip=24.71.148.60 | login_method=password
+2026-09-20 08:01:01,373 | ERROR | API_REQUEST | service=users | endpoint=/api/users | method=DELETE | status=200 | response_time_ms=1378 | user_id=U1048
+2026-09-20 08:01:01,656 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=DELETE | status=200 | response_time_ms=293 | user_id=U1065
+2026-09-20 08:01:01,866 | WARN | CACHE_ACCESS | key=auth_token | hit=false | ttl_sec=2163
+2026-09-20 08:01:02,041 | INFO | DATABASE_QUERY | service=payments | table=users | query_time_ms=403
+2026-09-20 08:01:02,065 | ERROR | API_REQUEST | service=auth | endpoint=/api/register | method=GET | status=201 | response_time_ms=1857 | user_id=U1006
+2026-09-20 08:01:02,286 | ERROR | USER_LOGOUT | user_id=U1048 | session_duration_sec=6465
+2026-09-20 08:01:02,299 | WARN | USER_LOGIN | user_id=U1085 | ip=145.162.226.157 | login_method=password
+2026-09-20 08:01:03,614 | DEBUG | API_REQUEST | service=auth | endpoint=/api/login | method=DELETE | status=200 | response_time_ms=140 | user_id=U1069
+2026-09-20 08:01:04,684 | INFO | USER_LOGOUT | user_id=U1088 | session_duration_sec=4772
+2026-09-20 08:01:05,247 | INFO | AUTH_FAILURE | user_id=U1094 | reason=account_locked
+2026-09-20 08:01:05,588 | WARN | USER_LOGOUT | user_id=U1040 | session_duration_sec=4950
+2026-09-20 08:01:06,130 | DEBUG | USER_LOGIN | user_id=U1048 | ip=30.150.185.148 | login_method=password
+2026-09-20 08:01:06,163 | INFO | USER_LOGOUT | user_id=U1081 | session_duration_sec=308
+2026-09-20 08:01:06,300 | WARN | USER_LOGIN | user_id=U1089 | ip=152.249.79.49 | login_method=password
+2026-09-20 08:01:06,382 | INFO | SERVICE_START | service=inventory | message=Service started successfully
+2026-09-20 08:01:06,744 | ERROR | DATABASE_QUERY | service=inventory | table=orders | query_time_ms=330
+2026-09-20 08:01:07,179 | INFO | USER_LOGIN | user_id=U1098 | ip=33.206.142.178 | login_method=password
+2026-09-20 08:01:07,608 | DEBUG | DATABASE_QUERY | service=auth | table=payments | query_time_ms=463
+2026-09-20 08:01:08,577 | ERROR | USER_LOGOUT | user_id=U1016 | session_duration_sec=5285
+2026-09-20 08:01:08,990 | INFO | DATABASE_ERROR | service=payments | error=Permission denied | query_time_ms=5040
+2026-09-20 08:01:09,956 | DEBUG | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=PUT | status=200 | response_time_ms=1541 | user_id=U1010
+2026-09-20 08:01:10,086 | INFO | DATABASE_QUERY | service=auth | table=orders | query_time_ms=449
+2026-09-20 08:01:11,432 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory | method=POST | status=200 | response_time_ms=794 | user_id=U1088
+2026-09-20 08:01:12,208 | INFO | AUTH_FAILURE | user_id=U1006 | reason=account_locked
+2026-09-20 08:01:12,333 | INFO | CACHE_ACCESS | key=user_session | hit=true | ttl_sec=3072
+2026-09-20 08:01:12,613 | INFO | DATABASE_QUERY | service=payments | table=products | query_time_ms=478
+2026-09-20 08:01:13,375 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=POST | status=200 | response_time_ms=227 | user_id=U1080
+2026-09-20 08:01:13,844 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=DELETE | status=400 | response_time_ms=1308 | user_id=U1019
+2026-09-20 08:01:13,968 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=PUT | status=200 | response_time_ms=1781 | user_id=U1087
+2026-09-20 08:01:14,176 | ERROR | USER_LOGOUT | user_id=U1007 | session_duration_sec=6187
+2026-09-20 08:01:14,358 | DEBUG | API_REQUEST | service=users | endpoint=/api/users/profile | method=DELETE | status=200 | response_time_ms=706 | user_id=U1077
+2026-09-20 08:01:14,598 | INFO | CACHE_ACCESS | key=cart_data | hit=false | ttl_sec=2626
+2026-09-20 08:01:14,611 | INFO | DATABASE_QUERY | service=orders | table=orders | query_time_ms=196
+2026-09-20 08:01:15,287 | DEBUG | USER_LOGIN | user_id=U1058 | ip=26.56.255.153 | login_method=password
+2026-09-20 08:01:15,547 | INFO | API_REQUEST | service=auth | endpoint=/api/register | method=DELETE | status=200 | response_time_ms=490 | user_id=U1068
+2026-09-20 08:01:15,797 | ERROR | API_REQUEST | service=orders | endpoint=/api/orders/status | method=GET | status=404 | response_time_ms=1554 | user_id=U1061
+2026-09-20 08:01:16,164 | ERROR | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=PUT | status=200 | response_time_ms=891 | user_id=U1083
+2026-09-20 08:01:16,345 | INFO | DATABASE_QUERY | service=inventory | table=products | query_time_ms=203
+2026-09-20 08:01:17,233 | INFO | USER_LOGOUT | user_id=U1016 | session_duration_sec=798
+2026-09-20 08:01:17,321 | INFO | USER_LOGIN | user_id=U1070 | ip=42.98.215.171 | login_method=password
+2026-09-20 08:01:17,972 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=DELETE | status=200 | response_time_ms=1488 | user_id=U1089
+2026-09-20 08:01:18,112 | INFO | USER_LOGOUT | user_id=U1084 | session_duration_sec=4010
+2026-09-20 08:01:18,130 | INFO | SERVICE_START | service=users | message=Service started successfully
+2026-09-20 08:01:18,401 | DEBUG | USER_LOGIN | user_id=U1020 | ip=24.41.95.18 | login_method=password
+2026-09-20 08:01:18,423 | INFO | DATABASE_QUERY | service=users | table=sessions | query_time_ms=261
+2026-09-20 08:01:18,621 | ERROR | DATABASE_QUERY | service=notifications | table=products | query_time_ms=425
+2026-09-20 08:01:18,629 | INFO | SERVICE_START | service=inventory | message=Service started successfully
+2026-09-20 08:01:19,514 | INFO | API_REQUEST | service=orders | endpoint=/api/orders | method=GET | status=200 | response_time_ms=346 | user_id=U1057
+2026-09-20 08:01:21,687 | INFO | DATABASE_ERROR | service=notifications | error=Timeout waiting for response | query_time_ms=6081
+2026-09-20 08:01:21,979 | INFO | USER_LOGIN | user_id=U1054 | ip=52.227.179.115 | login_method=password
+2026-09-20 08:01:22,565 | DEBUG | USER_LOGIN | user_id=U1011 | ip=147.97.26.69 | login_method=password
+2026-09-20 08:01:23,109 | WARN | API_REQUEST | service=payments | endpoint=/api/payments | method=POST | status=201 | response_time_ms=488 | user_id=U1099
+2026-09-20 08:01:24,099 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=PUT | status=404 | response_time_ms=707 | user_id=U1035
+2026-09-20 08:01:24,404 | ERROR | API_REQUEST | service=auth | endpoint=/api/login | method=GET | status=500 | response_time_ms=1589 | user_id=U1073
+2026-09-20 08:01:24,438 | INFO | USER_LOGOUT | user_id=U1043 | session_duration_sec=5651
+2026-09-20 08:01:24,636 | INFO | AUTH_FAILURE | user_id=U1059 | reason=missing_credentials
+2026-09-20 08:01:24,640 | INFO | DATABASE_QUERY | service=payments | table=sessions | query_time_ms=441
+2026-09-20 08:01:24,878 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=GET | status=200 | response_time_ms=407 | user_id=U1099
+2026-09-20 08:01:26,128 | WARN | DATABASE_ERROR | service=notifications | error=Service unavailable | query_time_ms=3114
+2026-09-20 08:01:26,702 | INFO | DATABASE_QUERY | service=auth | table=payments | query_time_ms=425
+2026-09-20 08:01:26,800 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=PUT | status=200 | response_time_ms=870 | user_id=U1062
+2026-09-20 08:01:26,856 | DEBUG | USER_LOGOUT | user_id=U1020 | session_duration_sec=5891
+2026-09-20 08:01:26,990 | INFO | DATABASE_QUERY | service=orders | table=products | query_time_ms=173
+2026-09-20 08:01:27,343 | WARN | AUTH_FAILURE | user_id=U1030 | reason=invalid_password
+2026-09-20 08:01:27,703 | INFO | USER_LOGOUT | user_id=U1090 | session_duration_sec=2457
+2026-09-20 08:01:28,223 | DEBUG | USER_LOGIN | user_id=U1086 | ip=130.146.4.217 | login_method=password
+2026-09-20 08:01:28,419 | INFO | CACHE_ACCESS | key=product_list | hit=true | ttl_sec=3541
+2026-09-20 08:01:28,478 | DEBUG | DATABASE_QUERY | service=payments | table=products | query_time_ms=447
+2026-09-20 08:01:28,701 | WARN | AUTH_FAILURE | user_id=U1030 | reason=account_locked
+2026-09-20 08:01:30,207 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=POST | status=200 | response_time_ms=433 | user_id=U1021
+2026-09-20 08:01:30,827 | WARN | DATABASE_QUERY | service=auth | table=sessions | query_time_ms=78
+2026-09-20 08:01:31,074 | WARN | SERVICE_START | service=payments | message=Service started successfully
+2026-09-20 08:01:31,737 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=802 | user_id=U1071
+2026-09-20 08:01:32,350 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=POST | status=404 | response_time_ms=1165 | user_id=U1007
+2026-09-20 08:01:32,513 | WARN | DATABASE_ERROR | service=inventory | error=Timeout waiting for response | query_time_ms=1861
+2026-09-20 08:01:33,262 | INFO | USER_LOGOUT | user_id=U1028 | session_duration_sec=2517
+2026-09-20 08:01:33,490 | INFO | API_REQUEST | service=orders | endpoint=/api/orders | method=PUT | status=500 | response_time_ms=1728 | user_id=U1091
+2026-09-20 08:01:33,836 | WARN | DATABASE_ERROR | service=inventory | error=Invalid request body | query_time_ms=3664
+2026-09-20 08:01:34,291 | INFO | API_REQUEST | service=auth | endpoint=/api/logout | method=POST | status=200 | response_time_ms=1790 | user_id=U1042
+2026-09-20 08:01:35,002 | INFO | DATABASE_QUERY | service=users | table=sessions | query_time_ms=451
+2026-09-20 08:01:35,226 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=DELETE | status=200 | response_time_ms=1447 | user_id=U1014
+2026-09-20 08:01:35,635 | DEBUG | USER_LOGIN | user_id=U1058 | ip=99.156.116.58 | login_method=password
+2026-09-20 08:01:36,298 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=GET | status=200 | response_time_ms=1661 | user_id=U1068
+2026-09-20 08:01:37,159 | INFO | API_REQUEST | service=payments | endpoint=/api/payments/process | method=POST | status=500 | response_time_ms=1455 | user_id=U1038
+2026-09-20 08:01:38,749 | DEBUG | DATABASE_QUERY | service=orders | table=orders | query_time_ms=186
+2026-09-20 08:01:38,898 | INFO | API_REQUEST | service=orders | endpoint=/api/orders | method=DELETE | status=404 | response_time_ms=1977 | user_id=U1062
+2026-09-20 08:01:38,946 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=GET | status=201 | response_time_ms=1163 | user_id=U1012
+2026-09-20 08:01:39,175 | WARN | API_REQUEST | service=payments | endpoint=/api/payments/process | method=DELETE | status=200 | response_time_ms=1142 | user_id=U1048
+2026-09-20 08:01:39,338 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=DELETE | status=200 | response_time_ms=316 | user_id=U1018
+2026-09-20 08:01:39,913 | INFO | DATABASE_QUERY | service=auth | table=products | query_time_ms=403
+2026-09-20 08:01:41,261 | INFO | DATABASE_QUERY | service=users | table=users | query_time_ms=207
+2026-09-20 08:01:42,693 | INFO | USER_LOGIN | user_id=U1049 | ip=179.77.253.247 | login_method=password
+2026-09-20 08:01:42,998 | INFO | API_REQUEST | service=payments | endpoint=/api/payments/process | method=POST | status=201 | response_time_ms=1326 | user_id=U1067
+2026-09-20 08:01:44,081 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=POST | status=500 | response_time_ms=625 | user_id=U1090
+2026-09-20 08:01:44,781 | WARN | API_REQUEST | service=users | endpoint=/api/users/update | method=GET | status=404 | response_time_ms=1270 | user_id=U1052
+2026-09-20 08:01:46,032 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=POST | status=200 | response_time_ms=1929 | user_id=U1092
+2026-09-20 08:01:47,309 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=GET | status=200 | response_time_ms=748 | user_id=U1008
+2026-09-20 08:01:47,762 | INFO | USER_LOGIN | user_id=U1006 | ip=182.50.31.104 | login_method=password
+2026-09-20 08:01:47,961 | INFO | DATABASE_QUERY | service=auth | table=sessions | query_time_ms=400
+2026-09-20 08:01:48,154 | ERROR | API_REQUEST | service=auth | endpoint=/api/logout | method=PUT | status=200 | response_time_ms=670 | user_id=U1090
+2026-09-20 08:01:48,492 | DEBUG | DATABASE_QUERY | service=auth | table=orders | query_time_ms=232
+2026-09-20 08:01:48,871 | WARN | SERVICE_START | service=inventory | message=Service started successfully
+2026-09-20 08:01:49,177 | INFO | USER_LOGIN | user_id=U1067 | ip=30.202.158.191 | login_method=password
+2026-09-20 08:01:49,525 | INFO | API_REQUEST | service=orders | endpoint=/api/orders | method=PUT | status=200 | response_time_ms=1144 | user_id=U1029
+2026-09-20 08:01:49,613 | INFO | DATABASE_QUERY | service=users | table=products | query_time_ms=349
+2026-09-20 08:01:49,767 | ERROR | DATABASE_ERROR | service=orders | error=Invalid request body | query_time_ms=6744
+2026-09-20 08:01:50,117 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=GET | status=200 | response_time_ms=161 | user_id=U1073
+2026-09-20 08:01:50,511 | INFO | DATABASE_ERROR | service=auth | error=Resource not found | query_time_ms=8043
+2026-09-20 08:01:51,657 | INFO | API_REQUEST | service=auth | endpoint=/api/register | method=PUT | status=401 | response_time_ms=1485 | user_id=U1000
+2026-09-20 08:01:52,134 | ERROR | API_REQUEST | service=auth | endpoint=/api/logout | method=PUT | status=200 | response_time_ms=1110 | user_id=U1050
+2026-09-20 08:01:52,821 | WARN | API_REQUEST | service=auth | endpoint=/api/register | method=PUT | status=500 | response_time_ms=161 | user_id=U1043
+2026-09-20 08:01:52,888 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=DELETE | status=201 | response_time_ms=650 | user_id=U1054
+2026-09-20 08:01:53,111 | DEBUG | API_REQUEST | service=notifications | endpoint=/api/notifications | method=GET | status=500 | response_time_ms=1337 | user_id=U1013
+2026-09-20 08:01:54,112 | ERROR | DATABASE_QUERY | service=payments | table=products | query_time_ms=193
+2026-09-20 08:01:55,361 | INFO | AUTH_FAILURE | user_id=U1091 | reason=account_locked
+2026-09-20 08:01:55,657 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory | method=GET | status=400 | response_time_ms=1117 | user_id=U1001
+2026-09-20 08:01:55,836 | WARN | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=GET | status=200 | response_time_ms=1764 | user_id=U1041
+2026-09-20 08:01:56,348 | INFO | DATABASE_QUERY | service=notifications | table=payments | query_time_ms=399
+2026-09-20 08:01:56,513 | INFO | USER_LOGOUT | user_id=U1057 | session_duration_sec=2585
+2026-09-20 08:01:57,174 | INFO | USER_LOGIN | user_id=U1064 | ip=148.252.224.21 | login_method=password
+2026-09-20 08:01:57,478 | DEBUG | API_REQUEST | service=payments | endpoint=/api/payments/refund | method=DELETE | status=200 | response_time_ms=488 | user_id=U1033
+2026-09-20 08:01:57,753 | ERROR | API_REQUEST | service=inventory | endpoint=/api/inventory | method=GET | status=200 | response_time_ms=91 | user_id=U1007
+2026-09-20 08:01:59,244 | ERROR | API_REQUEST | service=users | endpoint=/api/users/profile | method=POST | status=200 | response_time_ms=568 | user_id=U1055
+2026-09-20 08:02:00,339 | WARN | CACHE_ACCESS | key=config_cache | hit=true | ttl_sec=1599
+2026-09-20 08:02:00,692 | INFO | CACHE_ACCESS | key=user_session | hit=true | ttl_sec=1426
+2026-09-20 08:02:01,045 | ERROR | API_REQUEST | service=payments | endpoint=/api/payments | method=PUT | status=500 | response_time_ms=1453 | user_id=U1026
+2026-09-20 08:02:01,410 | INFO | DATABASE_QUERY | service=users | table=orders | query_time_ms=375
+2026-09-20 08:02:02,151 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=GET | status=200 | response_time_ms=1171 | user_id=U1010
+2026-09-20 08:02:02,206 | WARN | USER_LOGIN | user_id=U1058 | ip=43.212.233.145 | login_method=password
+2026-09-20 08:02:03,378 | WARN | CACHE_ACCESS | key=product_list | hit=false | ttl_sec=2442
+2026-09-20 08:02:03,905 | ERROR | CACHE_ACCESS | key=config_cache | hit=false | ttl_sec=2852
+2026-09-20 08:02:04,509 | INFO | API_REQUEST | service=payments | endpoint=/api/payments/process | method=POST | status=500 | response_time_ms=1412 | user_id=U1051
+2026-09-20 08:02:04,902 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=GET | status=200 | response_time_ms=1052 | user_id=U1000
+2026-09-20 08:02:06,281 | INFO | API_REQUEST | service=auth | endpoint=/api/logout | method=PUT | status=200 | response_time_ms=923 | user_id=U1022
+2026-09-20 08:02:07,122 | DEBUG | API_REQUEST | service=orders | endpoint=/api/orders/create | method=DELETE | status=200 | response_time_ms=291 | user_id=U1019
+2026-09-20 08:02:07,218 | INFO | AUTH_FAILURE | user_id=U1031 | reason=missing_credentials
+2026-09-20 08:02:08,817 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=POST | status=400 | response_time_ms=1083 | user_id=U1072
+2026-09-20 08:02:08,863 | INFO | API_REQUEST | service=orders | endpoint=/api/orders/status | method=PUT | status=200 | response_time_ms=417 | user_id=U1018
+2026-09-20 08:02:09,609 | INFO | USER_LOGIN | user_id=U1097 | ip=23.104.136.141 | login_method=password
+2026-09-20 08:02:10,751 | WARN | DATABASE_QUERY | service=orders | table=orders | query_time_ms=195
+2026-09-20 08:02:12,210 | WARN | API_REQUEST | service=auth | endpoint=/api/login | method=PUT | status=200 | response_time_ms=1482 | user_id=U1069
+2026-09-20 08:02:12,791 | INFO | DATABASE_ERROR | service=orders | error=Service unavailable | query_time_ms=2293
+2026-09-20 08:02:13,053 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=PUT | status=200 | response_time_ms=1675 | user_id=U1089
+2026-09-20 08:02:13,534 | INFO | USER_LOGIN | user_id=U1081 | ip=186.112.166.216 | login_method=password
+2026-09-20 08:02:14,013 | INFO | USER_LOGOUT | user_id=U1018 | session_duration_sec=2446
+2026-09-20 08:02:14,141 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=POST | status=500 | response_time_ms=328 | user_id=U1068
+2026-09-20 08:02:14,402 | INFO | USER_LOGIN | user_id=U1098 | ip=136.57.58.69 | login_method=password
+2026-09-20 08:02:14,844 | WARN | USER_LOGOUT | user_id=U1076 | session_duration_sec=2715
+2026-09-20 08:02:15,825 | INFO | CACHE_ACCESS | key=config_cache | hit=false | ttl_sec=789
+2026-09-20 08:02:16,140 | INFO | CACHE_ACCESS | key=user_session | hit=true | ttl_sec=679
+2026-09-20 08:02:16,984 | DEBUG | API_REQUEST | service=users | endpoint=/api/users/update | method=PUT | status=200 | response_time_ms=915 | user_id=U1086
+2026-09-20 08:02:17,816 | INFO | CACHE_ACCESS | key=product_list | hit=true | ttl_sec=1131
+2026-09-20 08:02:17,920 | INFO | API_REQUEST | service=auth | endpoint=/api/logout | method=GET | status=401 | response_time_ms=1202 | user_id=U1070
+2026-09-20 08:02:18,019 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=PUT | status=200 | response_time_ms=746 | user_id=U1065
+2026-09-20 08:02:18,216 | ERROR | DATABASE_ERROR | service=users | error=Invalid request body | query_time_ms=6272
+2026-09-20 08:02:18,272 | DEBUG | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=POST | status=200 | response_time_ms=1221 | user_id=U1063
+2026-09-20 08:02:18,400 | WARN | AUTH_FAILURE | user_id=U1068 | reason=missing_credentials
+2026-09-20 08:02:18,528 | ERROR | USER_LOGOUT | user_id=U1036 | session_duration_sec=2496
+2026-09-20 08:02:18,794 | INFO | USER_LOGIN | user_id=U1062 | ip=124.8.47.76 | login_method=password
+2026-09-20 08:02:19,490 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=PUT | status=200 | response_time_ms=1369 | user_id=U1018
+2026-09-20 08:02:20,420 | INFO | USER_LOGIN | user_id=U1096 | ip=118.26.147.154 | login_method=password
+2026-09-20 08:02:20,454 | INFO | API_REQUEST | service=users | endpoint=/api/users/update | method=DELETE | status=404 | response_time_ms=582 | user_id=U1079
+2026-09-20 08:02:20,670 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=DELETE | status=200 | response_time_ms=1351 | user_id=U1062
+2026-09-20 08:02:21,648 | INFO | SERVICE_START | service=auth | message=Service started successfully
+2026-09-20 08:02:21,955 | INFO | SERVICE_START | service=payments | message=Service started successfully
+2026-09-20 08:02:23,005 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=DELETE | status=200 | response_time_ms=1831 | user_id=U1042
+2026-09-20 08:02:23,178 | INFO | API_REQUEST | service=users | endpoint=/api/users/update | method=GET | status=200 | response_time_ms=1854 | user_id=U1066
+2026-09-20 08:02:23,525 | WARN | AUTH_FAILURE | user_id=U1078 | reason=invalid_password
+2026-09-20 08:02:24,980 | INFO | CACHE_ACCESS | key=auth_token | hit=false | ttl_sec=1413
+2026-09-20 08:02:25,192 | INFO | DATABASE_QUERY | service=users | table=sessions | query_time_ms=43
+2026-09-20 08:02:25,918 | INFO | CACHE_ACCESS | key=cart_data | hit=true | ttl_sec=1087
+2026-09-20 08:02:26,707 | INFO | DATABASE_QUERY | service=inventory | table=orders | query_time_ms=120
+2026-09-20 08:02:27,110 | DEBUG | DATABASE_QUERY | service=auth | table=users | query_time_ms=122
+2026-09-20 08:02:28,024 | WARN | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=GET | status=201 | response_time_ms=1169 | user_id=U1005
+2026-09-20 08:02:28,507 | INFO | USER_LOGIN | user_id=U1055 | ip=177.84.222.41 | login_method=password
+2026-09-20 08:02:28,758 | INFO | API_REQUEST | service=auth | endpoint=/api/logout | method=GET | status=201 | response_time_ms=868 | user_id=U1084
+2026-09-20 08:02:28,760 | ERROR | API_REQUEST | service=users | endpoint=/api/users/update | method=PUT | status=404 | response_time_ms=1382 | user_id=U1089
+2026-09-20 08:02:29,106 | INFO | USER_LOGIN | user_id=U1081 | ip=147.88.85.126 | login_method=password
+2026-09-20 08:02:29,471 | WARN | DATABASE_QUERY | service=auth | table=users | query_time_ms=173
+2026-09-20 08:02:29,509 | WARN | DATABASE_ERROR | service=inventory | error=Permission denied | query_time_ms=1423
+2026-09-20 08:02:30,613 | WARN | USER_LOGOUT | user_id=U1013 | session_duration_sec=715
+2026-09-20 08:02:31,251 | INFO | SERVICE_START | service=auth | message=Service started successfully
+2026-09-20 08:02:32,217 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory | method=DELETE | status=200 | response_time_ms=1733 | user_id=U1014
+2026-09-20 08:02:32,248 | INFO | DATABASE_QUERY | service=auth | table=payments | query_time_ms=97
+2026-09-20 08:02:32,372 | INFO | DATABASE_QUERY | service=users | table=sessions | query_time_ms=472
+2026-09-20 08:02:32,451 | INFO | CACHE_ACCESS | key=config_cache | hit=false | ttl_sec=2780
+2026-09-20 08:02:32,987 | DEBUG | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=DELETE | status=201 | response_time_ms=1696 | user_id=U1073
+2026-09-20 08:02:33,837 | ERROR | API_REQUEST | service=orders | endpoint=/api/orders | method=DELETE | status=200 | response_time_ms=600 | user_id=U1030
+2026-09-20 08:02:34,507 | INFO | API_REQUEST | service=orders | endpoint=/api/orders/status | method=POST | status=404 | response_time_ms=99 | user_id=U1052
+2026-09-20 08:02:34,886 | ERROR | API_REQUEST | service=inventory | endpoint=/api/inventory | method=GET | status=201 | response_time_ms=960 | user_id=U1089
+2026-09-20 08:02:35,256 | INFO | DATABASE_ERROR | service=orders | error=Invalid request body | query_time_ms=5335
+2026-09-20 08:02:37,020 | INFO | USER_LOGIN | user_id=U1056 | ip=65.44.51.36 | login_method=password
+2026-09-20 08:02:37,361 | DEBUG | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=GET | status=500 | response_time_ms=252 | user_id=U1071
+2026-09-20 08:02:37,574 | INFO | DATABASE_QUERY | service=payments | table=users | query_time_ms=474
+2026-09-20 08:02:37,933 | WARN | API_REQUEST | service=users | endpoint=/api/users | method=PUT | status=200 | response_time_ms=1630 | user_id=U1025
+2026-09-20 08:02:38,559 | INFO | USER_LOGIN | user_id=U1011 | ip=172.216.141.12 | login_method=password
+2026-09-20 08:02:39,547 | ERROR | USER_LOGIN | user_id=U1039 | ip=111.241.250.230 | login_method=password
+2026-09-20 08:02:39,856 | DEBUG | API_REQUEST | service=orders | endpoint=/api/orders | method=GET | status=400 | response_time_ms=1837 | user_id=U1069
+2026-09-20 08:02:40,035 | INFO | USER_LOGIN | user_id=U1021 | ip=168.235.185.23 | login_method=password
+2026-09-20 08:02:40,394 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory | method=POST | status=200 | response_time_ms=1489 | user_id=U1027
+2026-09-20 08:02:40,426 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=POST | status=500 | response_time_ms=430 | user_id=U1008
+2026-09-20 08:02:40,835 | DEBUG | SERVICE_STOP | service=users | message=Service shutting down
+2026-09-20 08:02:41,166 | ERROR | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=DELETE | status=200 | response_time_ms=1145 | user_id=U1094
+2026-09-20 08:02:41,531 | DEBUG | DATABASE_QUERY | service=users | table=sessions | query_time_ms=273
+2026-09-20 08:02:42,295 | INFO | SERVICE_START | service=inventory | message=Service started successfully
+2026-09-20 08:02:42,490 | WARN | API_REQUEST | service=payments | endpoint=/api/payments/process | method=POST | status=500 | response_time_ms=970 | user_id=U1057
+2026-09-20 08:02:42,536 | WARN | DATABASE_QUERY | service=auth | table=orders | query_time_ms=491
+2026-09-20 08:02:43,859 | INFO | CACHE_ACCESS | key=product_list | hit=false | ttl_sec=571
+2026-09-20 08:02:43,993 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=PUT | status=200 | response_time_ms=1270 | user_id=U1094
+2026-09-20 08:02:44,325 | WARN | DATABASE_QUERY | service=auth | table=sessions | query_time_ms=110
+2026-09-20 08:02:44,400 | INFO | DATABASE_QUERY | service=auth | table=products | query_time_ms=293
+2026-09-20 08:02:44,795 | WARN | DATABASE_QUERY | service=notifications | table=users | query_time_ms=335
+2026-09-20 08:02:45,107 | INFO | API_REQUEST | service=auth | endpoint=/api/logout | method=GET | status=200 | response_time_ms=1421 | user_id=U1076
+2026-09-20 08:02:45,260 | DEBUG | USER_LOGOUT | user_id=U1047 | session_duration_sec=3184
+2026-09-20 08:02:46,965 | INFO | CACHE_ACCESS | key=product_list | hit=false | ttl_sec=472
+2026-09-20 08:02:48,508 | WARN | CACHE_ACCESS | key=user_session | hit=true | ttl_sec=987
+2026-09-20 08:02:48,601 | INFO | AUTH_FAILURE | user_id=U1046 | reason=invalid_password
+2026-09-20 08:02:49,155 | INFO | SERVICE_STOP | service=orders | message=Service shutting down
+2026-09-20 08:02:49,284 | INFO | SERVICE_STOP | service=inventory | message=Service shutting down
+2026-09-20 08:02:49,402 | INFO | USER_LOGIN | user_id=U1075 | ip=86.217.128.117 | login_method=password
+2026-09-20 08:02:49,522 | INFO | API_REQUEST | service=orders | endpoint=/api/orders/status | method=PUT | status=200 | response_time_ms=1954 | user_id=U1072
+2026-09-20 08:02:49,576 | INFO | USER_LOGIN | user_id=U1099 | ip=107.214.82.210 | login_method=password
+2026-09-20 08:02:50,099 | INFO | SERVICE_START | service=payments | message=Service started successfully
+2026-09-20 08:02:50,181 | DEBUG | CACHE_ACCESS | key=product_list | hit=true | ttl_sec=1806
+2026-09-20 08:02:51,010 | WARN | DATABASE_QUERY | service=notifications | table=users | query_time_ms=393
+2026-09-20 08:02:51,524 | INFO | CACHE_ACCESS | key=user_session | hit=false | ttl_sec=2491
+2026-09-20 08:02:51,714 | ERROR | DATABASE_ERROR | service=orders | error=Resource not found | query_time_ms=8066
+2026-09-20 08:02:52,559 | INFO | USER_LOGIN | user_id=U1092 | ip=80.147.62.147 | login_method=password
+2026-09-20 08:02:52,572 | INFO | CACHE_ACCESS | key=auth_token | hit=true | ttl_sec=897
+2026-09-20 08:02:52,628 | DEBUG | USER_LOGIN | user_id=U1047 | ip=15.172.155.80 | login_method=password
+2026-09-20 08:02:53,418 | INFO | CACHE_ACCESS | key=user_session | hit=false | ttl_sec=360
+2026-09-20 08:02:53,495 | ERROR | API_REQUEST | service=orders | endpoint=/api/orders | method=DELETE | status=200 | response_time_ms=1470 | user_id=U1056
+2026-09-20 08:02:53,500 | ERROR | API_REQUEST | service=auth | endpoint=/api/register | method=PUT | status=200 | response_time_ms=308 | user_id=U1031
+2026-09-20 08:02:54,668 | WARN | AUTH_FAILURE | user_id=U1031 | reason=invalid_password
+2026-09-20 08:02:54,866 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=GET | status=400 | response_time_ms=345 | user_id=U1039
+2026-09-20 08:02:55,331 | INFO | USER_LOGIN | user_id=U1000 | ip=50.216.174.72 | login_method=password
+2026-09-20 08:02:55,356 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=DELETE | status=201 | response_time_ms=1192 | user_id=U1080
+2026-09-20 08:02:55,674 | INFO | API_REQUEST | service=auth | endpoint=/api/logout | method=POST | status=201 | response_time_ms=830 | user_id=U1008
+2026-09-20 08:02:55,711 | DEBUG | AUTH_FAILURE | user_id=U1042 | reason=invalid_password
+2026-09-20 08:02:55,941 | DEBUG | USER_LOGOUT | user_id=U1070 | session_duration_sec=4200
+2026-09-20 08:02:56,174 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=GET | status=200 | response_time_ms=1939 | user_id=U1084
+2026-09-20 08:02:57,184 | INFO | AUTH_FAILURE | user_id=U1042 | reason=invalid_password
+2026-09-20 08:02:57,390 | WARN | API_REQUEST | service=payments | endpoint=/api/payments/refund | method=POST | status=200 | response_time_ms=421 | user_id=U1017
+2026-09-20 08:02:57,535 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory | method=POST | status=200 | response_time_ms=572 | user_id=U1028
+2026-09-20 08:02:58,342 | INFO | DATABASE_ERROR | service=payments | error=Resource not found | query_time_ms=7363
+2026-09-20 08:03:00,224 | INFO | DATABASE_QUERY | service=users | table=orders | query_time_ms=59
+2026-09-20 08:03:02,053 | WARN | API_REQUEST | service=orders | endpoint=/api/orders | method=DELETE | status=200 | response_time_ms=385 | user_id=U1035
+2026-09-20 08:03:02,690 | INFO | API_REQUEST | service=payments | endpoint=/api/payments | method=DELETE | status=500 | response_time_ms=1552 | user_id=U1017
+2026-09-20 08:03:03,498 | INFO | API_REQUEST | service=auth | endpoint=/api/refresh-token | method=GET | status=200 | response_time_ms=661 | user_id=U1078
+2026-09-20 08:03:04,347 | WARN | USER_LOGIN | user_id=U1049 | ip=11.109.105.72 | login_method=password
+2026-09-20 08:03:04,671 | WARN | API_REQUEST | service=orders | endpoint=/api/orders/create | method=POST | status=500 | response_time_ms=84 | user_id=U1050
+2026-09-20 08:03:04,913 | INFO | API_REQUEST | service=auth | endpoint=/api/register | method=DELETE | status=200 | response_time_ms=562 | user_id=U1013
+2026-09-20 08:03:06,364 | INFO | API_REQUEST | service=orders | endpoint=/api/orders | method=PUT | status=400 | response_time_ms=1267 | user_id=U1076
+2026-09-20 08:03:07,252 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=GET | status=201 | response_time_ms=975 | user_id=U1003
+2026-09-20 08:03:07,444 | WARN | DATABASE_ERROR | service=auth | error=Connection refused to database | query_time_ms=6488
+2026-09-20 08:03:07,944 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=POST | status=200 | response_time_ms=168 | user_id=U1091
+2026-09-20 08:03:08,081 | WARN | API_REQUEST | service=auth | endpoint=/api/logout | method=PUT | status=200 | response_time_ms=947 | user_id=U1014
+2026-09-20 08:03:08,097 | WARN | API_REQUEST | service=orders | endpoint=/api/orders/create | method=DELETE | status=500 | response_time_ms=407 | user_id=U1047
+2026-09-20 08:03:08,111 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=POST | status=200 | response_time_ms=1330 | user_id=U1010
+2026-09-20 08:03:08,816 | INFO | DATABASE_QUERY | service=users | table=payments | query_time_ms=348
+2026-09-20 08:03:10,563 | DEBUG | DATABASE_QUERY | service=users | table=users | query_time_ms=13
+2026-09-20 08:03:10,779 | INFO | CACHE_ACCESS | key=config_cache | hit=true | ttl_sec=909
+2026-09-20 08:03:10,840 | INFO | DATABASE_QUERY | service=notifications | table=products | query_time_ms=256
+2026-09-20 08:03:11,084 | INFO | AUTH_FAILURE | user_id=U1008 | reason=expired_token
+2026-09-20 08:03:11,110 | INFO | DATABASE_ERROR | service=orders | error=Internal server error | query_time_ms=8381
+2026-09-20 08:03:11,372 | DEBUG | DATABASE_QUERY | service=inventory | table=users | query_time_ms=397
+2026-09-20 08:03:11,456 | ERROR | DATABASE_QUERY | service=users | table=products | query_time_ms=196
+2026-09-20 08:03:12,078 | DEBUG | AUTH_FAILURE | user_id=U1051 | reason=account_locked
+2026-09-20 08:03:12,997 | WARN | DATABASE_QUERY | service=notifications | table=sessions | query_time_ms=140
+2026-09-20 08:03:13,168 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=GET | status=200 | response_time_ms=621 | user_id=U1075
+2026-09-20 08:03:13,778 | WARN | API_REQUEST | service=auth | endpoint=/api/refresh-token | method=POST | status=500 | response_time_ms=219 | user_id=U1094
+2026-09-20 08:03:14,577 | ERROR | CACHE_ACCESS | key=config_cache | hit=false | ttl_sec=3177
+2026-09-20 08:03:15,493 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=GET | status=500 | response_time_ms=419 | user_id=U1075
+2026-09-20 08:03:16,422 | ERROR | SERVICE_STOP | service=orders | message=Service shutting down
+2026-09-20 08:03:16,747 | INFO | DATABASE_QUERY | service=orders | table=payments | query_time_ms=198
+2026-09-20 08:03:16,957 | INFO | DATABASE_QUERY | service=orders | table=users | query_time_ms=222
+2026-09-20 08:03:16,990 | INFO | DATABASE_ERROR | service=payments | error=Connection refused to database | query_time_ms=1151
+2026-09-20 08:03:17,160 | INFO | API_REQUEST | service=orders | endpoint=/api/orders | method=PUT | status=404 | response_time_ms=235 | user_id=U1084
+2026-09-20 08:03:17,670 | DEBUG | USER_LOGOUT | user_id=U1047 | session_duration_sec=5571
+2026-09-20 08:03:18,157 | INFO | AUTH_FAILURE | user_id=U1056 | reason=invalid_password
+2026-09-20 08:03:18,724 | INFO | CACHE_ACCESS | key=product_list | hit=false | ttl_sec=2048
+2026-09-20 08:03:19,715 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=PUT | status=201 | response_time_ms=1486 | user_id=U1098
+2026-09-20 08:03:20,112 | INFO | DATABASE_QUERY | service=auth | table=products | query_time_ms=491
+2026-09-20 08:03:20,558 | WARN | AUTH_FAILURE | user_id=U1020 | reason=invalid_password
+2026-09-20 08:03:20,974 | INFO | API_REQUEST | service=orders | endpoint=/api/orders | method=POST | status=500 | response_time_ms=772 | user_id=U1087
+2026-09-20 08:03:21,550 | DEBUG | CACHE_ACCESS | key=config_cache | hit=true | ttl_sec=1883
+2026-09-20 08:03:21,552 | INFO | CACHE_ACCESS | key=cart_data | hit=true | ttl_sec=2306
+2026-09-20 08:03:21,776 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=DELETE | status=200 | response_time_ms=747 | user_id=U1007
+2026-09-20 08:03:22,049 | INFO | USER_LOGIN | user_id=U1093 | ip=161.137.165.219 | login_method=password
+2026-09-20 08:03:22,203 | INFO | DATABASE_ERROR | service=notifications | error=Permission denied | query_time_ms=4050
+2026-09-20 08:03:22,741 | WARN | SERVICE_STOP | service=inventory | message=Service shutting down
+2026-09-20 08:03:23,751 | WARN | USER_LOGIN | user_id=U1057 | ip=50.243.230.67 | login_method=password
+2026-09-20 08:03:23,946 | WARN | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=PUT | status=200 | response_time_ms=1804 | user_id=U1018
+2026-09-20 08:03:24,175 | WARN | CACHE_ACCESS | key=user_session | hit=false | ttl_sec=2056
+2026-09-20 08:03:24,277 | ERROR | USER_LOGIN | user_id=U1061 | ip=28.117.196.23 | login_method=password
+2026-09-20 08:03:26,231 | DEBUG | CACHE_ACCESS | key=config_cache | hit=true | ttl_sec=768
+2026-09-20 08:03:26,747 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=POST | status=500 | response_time_ms=987 | user_id=U1041
+2026-09-20 08:03:27,239 | WARN | DATABASE_QUERY | service=inventory | table=products | query_time_ms=52
+2026-09-20 08:03:27,339 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=POST | status=500 | response_time_ms=897 | user_id=U1092
+2026-09-20 08:03:27,454 | INFO | DATABASE_QUERY | service=orders | table=orders | query_time_ms=173
+2026-09-20 08:03:27,517 | WARN | API_REQUEST | service=auth | endpoint=/api/refresh-token | method=PUT | status=200 | response_time_ms=1682 | user_id=U1011
+2026-09-20 08:03:28,222 | INFO | DATABASE_ERROR | service=notifications | error=Connection refused to database | query_time_ms=7232
+2026-09-20 08:03:28,340 | INFO | DATABASE_QUERY | service=notifications | table=payments | query_time_ms=177
+2026-09-20 08:03:28,436 | WARN | DATABASE_QUERY | service=notifications | table=users | query_time_ms=275
+2026-09-20 08:03:28,527 | INFO | CACHE_ACCESS | key=user_session | hit=false | ttl_sec=2278
+2026-09-20 08:03:28,727 | INFO | DATABASE_ERROR | service=auth | error=Resource not found | query_time_ms=4673
+2026-09-20 08:03:30,126 | ERROR | SERVICE_STOP | service=auth | message=Service shutting down
+2026-09-20 08:03:30,650 | INFO | USER_LOGOUT | user_id=U1068 | session_duration_sec=4072
+2026-09-20 08:03:31,325 | INFO | API_REQUEST | service=users | endpoint=/api/users | method=POST | status=200 | response_time_ms=745 | user_id=U1073
+2026-09-20 08:03:31,973 | INFO | API_REQUEST | service=inventory | endpoint=/api/inventory/update | method=POST | status=400 | response_time_ms=615 | user_id=U1082
+2026-09-20 08:03:32,526 | WARN | API_REQUEST | service=users | endpoint=/api/users | method=DELETE | status=200 | response_time_ms=1706 | user_id=U1036
+2026-09-20 08:03:33,198 | INFO | DATABASE_ERROR | service=notifications | error=Invalid request body | query_time_ms=8046
+2026-09-20 08:03:33,650 | INFO | USER_LOGOUT | user_id=U1059 | session_duration_sec=894
+2026-09-20 08:03:35,262 | INFO | USER_LOGIN | user_id=U1017 | ip=62.105.30.146 | login_method=password
+2026-09-20 08:03:36,040 | INFO | SERVICE_START | service=payments | message=Service started successfully
+2026-09-20 08:03:36,611 | INFO | API_REQUEST | service=orders | endpoint=/api/orders/status | method=PUT | status=200 | response_time_ms=553 | user_id=U1006
+2026-09-20 08:03:36,620 | INFO | USER_LOGIN | user_id=U1020 | ip=104.181.107.172 | login_method=password
+2026-09-20 08:03:37,115 | INFO | CACHE_ACCESS | key=cart_data | hit=false | ttl_sec=1960
+2026-09-20 08:03:38,332 | DEBUG | API_REQUEST | service=payments | endpoint=/api/payments/process | method=GET | status=200 | response_time_ms=148 | user_id=U1044
+2026-09-20 08:03:38,605 | WARN | API_REQUEST | service=payments | endpoint=/api/payments/process | method=GET | status=200 | response_time_ms=1860 | user_id=U1083
+2026-09-20 08:03:39,247 | WARN | DATABASE_ERROR | service=payments | error=Resource not found | query_time_ms=2415
+2026-09-20 08:03:39,909 | INFO | SERVICE_START | service=payments | message=Service started successfully
+2026-09-20 08:03:40,079 | WARN | API_REQUEST | service=auth | endpoint=/api/logout | method=GET | status=200 | response_time_ms=842 | user_id=U1062
+2026-09-20 08:03:40,702 | INFO | AUTH_FAILURE | user_id=U1060 | reason=account_locked
+2026-09-20 08:03:41,447 | INFO | API_REQUEST | service=users | endpoint=/api/users/update | method=DELETE | status=200 | response_time_ms=1552 | user_id=U1082
+2026-09-20 08:03:42,428 | WARN | API_REQUEST | service=payments | endpoint=/api/payments/refund | method=POST | status=400 | response_time_ms=426 | user_id=U1087
+2026-09-20 08:03:43,697 | ERROR | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=PUT | status=200 | response_time_ms=162 | user_id=U1087
+2026-09-20 08:03:43,875 | INFO | DATABASE_QUERY | service=auth | table=orders | query_time_ms=60
+2026-09-20 08:03:43,969 | INFO | AUTH_FAILURE | user_id=U1024 | reason=account_locked
+2026-09-20 08:03:44,131 | INFO | DATABASE_ERROR | service=orders | error=Timeout waiting for response | query_time_ms=9204
+2026-09-20 08:03:46,355 | WARN | API_REQUEST | service=orders | endpoint=/api/orders/create | method=DELETE | status=200 | response_time_ms=280 | user_id=U1092
+2026-09-20 08:03:46,732 | INFO | DATABASE_QUERY | service=auth | table=products | query_time_ms=334
+2026-09-20 08:03:47,076 | INFO | USER_LOGIN | user_id=U1004 | ip=167.125.151.128 | login_method=password
+2026-09-20 08:03:47,126 | INFO | DATABASE_QUERY | service=users | table=sessions | query_time_ms=161
+2026-09-20 08:03:47,406 | INFO | USER_LOGIN | user_id=U1016 | ip=148.187.139.213 | login_method=password
+2026-09-20 08:03:48,582 | INFO | USER_LOGIN | user_id=U1028 | ip=47.8.133.142 | login_method=password
+2026-09-20 08:03:48,610 | INFO | DATABASE_QUERY | service=users | table=orders | query_time_ms=473
+2026-09-20 08:03:49,186 | INFO | DATABASE_QUERY | service=notifications | table=orders | query_time_ms=205
+2026-09-20 08:03:49,474 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=PUT | status=200 | response_time_ms=312 | user_id=U1075
+2026-09-20 08:03:49,670 | INFO | DATABASE_QUERY | service=payments | table=orders | query_time_ms=65
+2026-09-20 08:03:50,130 | WARN | DATABASE_ERROR | service=auth | error=Service unavailable | query_time_ms=9498
+2026-09-20 08:03:50,290 | WARN | USER_LOGOUT | user_id=U1051 | session_duration_sec=5872
+2026-09-20 08:03:51,156 | INFO | DATABASE_QUERY | service=auth | table=orders | query_time_ms=163
+2026-09-20 08:03:51,396 | WARN | USER_LOGOUT | user_id=U1022 | session_duration_sec=7026
+2026-09-20 08:03:52,218 | INFO | USER_LOGOUT | user_id=U1049 | session_duration_sec=5606
+2026-09-20 08:03:52,358 | INFO | USER_LOGIN | user_id=U1025 | ip=186.67.154.41 | login_method=password
+2026-09-20 08:03:53,437 | WARN | API_REQUEST | service=orders | endpoint=/api/orders/create | method=DELETE | status=201 | response_time_ms=641 | user_id=U1063
+2026-09-20 08:03:53,573 | WARN | USER_LOGOUT | user_id=U1036 | session_duration_sec=747
+2026-09-20 08:03:53,689 | INFO | USER_LOGIN | user_id=U1025 | ip=94.117.194.146 | login_method=password
+2026-09-20 08:03:53,878 | INFO | USER_LOGIN | user_id=U1052 | ip=58.48.49.169 | login_method=password
+2026-09-20 08:03:53,956 | DEBUG | API_REQUEST | service=users | endpoint=/api/users/profile | method=PUT | status=200 | response_time_ms=1490 | user_id=U1073
+2026-09-20 08:03:54,084 | INFO | SERVICE_START | service=inventory | message=Service started successfully
+2026-09-20 08:03:54,763 | INFO | DATABASE_QUERY | service=orders | table=products | query_time_ms=232
+2026-09-20 08:03:55,090 | INFO | CACHE_ACCESS | key=auth_token | hit=false | ttl_sec=1663
+2026-09-20 08:03:55,401 | INFO | DATABASE_QUERY | service=notifications | table=sessions | query_time_ms=466
+2026-09-20 08:03:56,331 | WARN | DATABASE_ERROR | service=payments | error=Resource not found | query_time_ms=2965
+2026-09-20 08:03:57,092 | WARN | AUTH_FAILURE | user_id=U1069 | reason=account_locked
+2026-09-20 08:03:57,169 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=DELETE | status=201 | response_time_ms=178 | user_id=U1081
+2026-09-20 08:03:57,638 | WARN | API_REQUEST | service=notifications | endpoint=/api/notifications/send | method=PUT | status=200 | response_time_ms=575 | user_id=U1024
+2026-09-20 08:03:57,823 | INFO | USER_LOGIN | user_id=U1097 | ip=158.229.165.222 | login_method=password
+2026-09-20 08:03:57,960 | INFO | API_REQUEST | service=users | endpoint=/api/users/update | method=DELETE | status=200 | response_time_ms=1017 | user_id=U1053
+2026-09-20 08:03:58,350 | INFO | DATABASE_ERROR | service=inventory | error=Connection refused to database | query_time_ms=7397
+2026-09-20 08:03:59,171 | INFO | USER_LOGOUT | user_id=U1045 | session_duration_sec=5596
+2026-09-20 08:03:59,309 | INFO | AUTH_FAILURE | user_id=U1085 | reason=invalid_password
+2026-09-20 08:03:59,340 | INFO | USER_LOGIN | user_id=U1047 | ip=116.241.111.196 | login_method=password
+2026-09-20 08:04:00,130 | INFO | USER_LOGOUT | user_id=U1020 | session_duration_sec=6922
+2026-09-20 08:04:00,633 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=PUT | status=200 | response_time_ms=1057 | user_id=U1014
+2026-09-20 08:04:00,723 | INFO | SERVICE_START | service=notifications | message=Service started successfully
+2026-09-20 08:04:01,702 | INFO | DATABASE_ERROR | service=auth | error=Connection refused to database | query_time_ms=2615
+2026-09-20 08:04:02,051 | ERROR | AUTH_FAILURE | user_id=U1084 | reason=expired_token
+2026-09-20 08:04:02,181 | INFO | DATABASE_QUERY | service=users | table=sessions | query_time_ms=500
+2026-09-20 08:04:02,249 | ERROR | AUTH_FAILURE | user_id=U1052 | reason=missing_credentials
+2026-09-20 08:04:02,743 | INFO | USER_LOGIN | user_id=U1056 | ip=171.155.140.152 | login_method=password
+2026-09-20 08:04:02,769 | WARN | API_REQUEST | service=notifications | endpoint=/api/notifications | method=PUT | status=201 | response_time_ms=706 | user_id=U1014
+2026-09-20 08:04:03,430 | INFO | USER_LOGIN | user_id=U1034 | ip=31.217.40.111 | login_method=password
+2026-09-20 08:04:03,556 | INFO | API_REQUEST | service=notifications | endpoint=/api/notifications | method=DELETE | status=200 | response_time_ms=1985 | user_id=U1050
+2026-09-20 08:04:04,974 | INFO | DATABASE_ERROR | service=notifications | error=Connection refused to database | query_time_ms=8775
+2026-09-20 08:04:05,127 | WARN | API_REQUEST | service=payments | endpoint=/api/payments | method=PUT | status=200 | response_time_ms=1103 | user_id=U1016
+2026-09-20 08:04:05,287 | INFO | CACHE_ACCESS | key=cart_data | hit=true | ttl_sec=2378
+2026-09-20 08:04:05,778 | INFO | SERVICE_START | service=notifications | message=Service started successfully
+2026-09-20 08:04:06,423 | INFO | USER_LOGIN | user_id=U1007 | ip=152.89.218.143 | login_method=password
+2026-09-20 08:04:06,720 | ERROR | API_REQUEST | service=inventory | endpoint=/api/inventory/check | method=PUT | status=200 | response_time_ms=363 | user_id=U1097
+2026-09-20 08:04:07,675 | INFO | USER_LOGIN | user_id=U1088 | ip=117.18.184.180 | login_method=password
+2026-09-20 08:04:08,530 | ERROR | API_REQUEST | service=users | endpoint=/api/users | method=PUT | status=200 | response_time_ms=1584 | user_id=U1017
+2026-09-20 08:04:09,157 | INFO | API_REQUEST | service=users | endpoint=/api/users/profile | method=PUT | status=200 | response_time_ms=257 | user_id=U1092
+2026-09-20 08:04:09,315 | WARN | SERVICE_START | service=notifications | message=Service started successfully
+2026-09-20 08:04:09,316 | INFO | DATABASE_ERROR | service=auth | error=Rate limit exceeded | query_time_ms=4434
+2026-09-20 08:04:09,446 | WARN | DATABASE_ERROR | service=inventory | error=Invalid request body | query_time_ms=3466
+2026-09-20 08:04:09,893 | INFO | API_REQUEST | service=auth | endpoint=/api/logout | method=DELETE | status=201 | response_time_ms=915 | user_id=U1035
