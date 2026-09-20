@@ -97,6 +97,14 @@ def main():
             print(f"Error: {e}")
             sys.exit(1)
 
+    elif command == "report":
+        try:
+            from app.reporting import run_reporting
+            run_reporting()
+        except Exception as e:
+            print(f"Error: {e}")
+            sys.exit(1)
+
     else:
         print(f"Unknown command: {command}")
         print("Usage:")
@@ -111,6 +119,7 @@ def main():
         print("  python run.py analyze      - Run SQL analytics on log data")
         print("  python run.py detect       - Run anomaly detection")
         print("  python run.py detect --contamination 0.05")
+        print("  python run.py report      - Generate final reports")
         sys.exit(1)
 
 

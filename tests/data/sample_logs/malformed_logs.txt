@@ -1,0 +1,6 @@
+2026-09-20 10:15:32,123 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=142 | user_id=U1024
+this is not a valid log line
+2026-09-20 10:15:32,123 | INFO
+not-a-date | INFO | API_REQUEST | service=auth
+2026-09-20 10:15:32,123 | TRACE | API_REQUEST | service=auth
+2026-09-20 10:15:32,123 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=abc

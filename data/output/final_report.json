@@ -1,0 +1,502 @@
+{
+  "generated_at": "2026-09-20T21:18:53.593572",
+  "dataset": {
+    "total_records": 502,
+    "earliest_timestamp": "2026-09-20T08:00:00.271000",
+    "latest_timestamp": "2026-09-20T10:16:00"
+  },
+  "data_quality": {
+    "total_records": 502,
+    "earliest_timestamp": "2026-09-20 08:00:00.271000",
+    "latest_timestamp": "2026-09-20 10:16:00",
+    "quality_checks_passed": 11,
+    "quality_checks_failed": 1,
+    "quality_checks_warned": 10,
+    "quality_score": 50.0,
+    "checks": [
+      {
+        "check_name": "timestamp_completeness",
+        "category": "completeness",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "timestamp: 0 NULL values (0.0%)"
+      },
+      {
+        "check_name": "log_level_completeness",
+        "category": "completeness",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "log_level: 0 NULL values (0.0%)"
+      },
+      {
+        "check_name": "event_type_completeness",
+        "category": "completeness",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "event_type: 0 NULL values (0.0%)"
+      },
+      {
+        "check_name": "service_completeness",
+        "category": "completeness",
+        "status": "PASS",
+        "value": 165,
+        "threshold": 0,
+        "message": "service: 165 NULL values (32.87%)"
+      },
+      {
+        "check_name": "endpoint_completeness",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 314,
+        "threshold": 0,
+        "message": "endpoint: 314 NULL values (62.55%)"
+      },
+      {
+        "check_name": "method_completeness",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 314,
+        "threshold": 0,
+        "message": "method: 314 NULL values (62.55%)"
+      },
+      {
+        "check_name": "status_completeness",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 313,
+        "threshold": 0,
+        "message": "status: 313 NULL values (62.35%)"
+      },
+      {
+        "check_name": "response_time_ms_completeness",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 313,
+        "threshold": 0,
+        "message": "response_time_ms: 313 NULL values (62.35%)"
+      },
+      {
+        "check_name": "user_id_completeness",
+        "category": "completeness",
+        "status": "PASS",
+        "value": 190,
+        "threshold": 0,
+        "message": "user_id: 190 NULL values (37.85%)"
+      },
+      {
+        "check_name": "negative_response_times",
+        "category": "validity",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "0 negative response times"
+      },
+      {
+        "check_name": "invalid_http_status",
+        "category": "validity",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "0 invalid HTTP statuses"
+      },
+      {
+        "check_name": "duplicate_ids",
+        "category": "uniqueness",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "0 duplicate record IDs"
+      },
+      {
+        "check_name": "valid_log_levels",
+        "category": "consistency",
+        "status": "FAIL",
+        "value": -503,
+        "threshold": 0,
+        "message": "-503 invalid log levels"
+      },
+      {
+        "check_name": "timestamp_null_count",
+        "category": "completeness",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "timestamp: 0 NULLs"
+      },
+      {
+        "check_name": "log_level_null_count",
+        "category": "completeness",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "log_level: 0 NULLs"
+      },
+      {
+        "check_name": "event_type_null_count",
+        "category": "completeness",
+        "status": "PASS",
+        "value": 0,
+        "threshold": 0,
+        "message": "event_type: 0 NULLs"
+      },
+      {
+        "check_name": "service_null_count",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 165,
+        "threshold": 0,
+        "message": "service: 165 NULLs"
+      },
+      {
+        "check_name": "endpoint_null_count",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 314,
+        "threshold": 0,
+        "message": "endpoint: 314 NULLs"
+      },
+      {
+        "check_name": "method_null_count",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 314,
+        "threshold": 0,
+        "message": "method: 314 NULLs"
+      },
+      {
+        "check_name": "status_null_count",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 313,
+        "threshold": 0,
+        "message": "status: 313 NULLs"
+      },
+      {
+        "check_name": "response_time_ms_null_count",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 313,
+        "threshold": 0,
+        "message": "response_time_ms: 313 NULLs"
+      },
+      {
+        "check_name": "user_id_null_count",
+        "category": "completeness",
+        "status": "WARN",
+        "value": 190,
+        "threshold": 0,
+        "message": "user_id: 190 NULLs"
+      }
+    ]
+  },
+  "operational_metrics": {
+    "total_events": 502,
+    "log_level_distribution": [
+      {
+        "log_level": "INFO",
+        "event_count": 302,
+        "pct": 60.16
+      },
+      {
+        "log_level": "WARN",
+        "event_count": 97,
+        "pct": 19.32
+      },
+      {
+        "log_level": "ERROR",
+        "event_count": 53,
+        "pct": 10.56
+      },
+      {
+        "log_level": "DEBUG",
+        "event_count": 50,
+        "pct": 9.96
+      }
+    ],
+    "event_type_distribution": [
+      {
+        "event_type": "API_REQUEST",
+        "event_count": 188,
+        "pct": 37.45
+      },
+      {
+        "event_type": "DATABASE_QUERY",
+        "event_count": 86,
+        "pct": 17.13
+      },
+      {
+        "event_type": "USER_LOGIN",
+        "event_count": 59,
+        "pct": 11.75
+      },
+      {
+        "event_type": "CACHE_ACCESS",
+        "event_count": 41,
+        "pct": 8.17
+      },
+      {
+        "event_type": "USER_LOGOUT",
+        "event_count": 36,
+        "pct": 7.17
+      },
+      {
+        "event_type": "DATABASE_ERROR",
+        "event_count": 35,
+        "pct": 6.97
+      },
+      {
+        "event_type": "AUTH_FAILURE",
+        "event_count": 29,
+        "pct": 5.78
+      },
+      {
+        "event_type": "SERVICE_START",
+        "event_count": 20,
+        "pct": 3.98
+      },
+      {
+        "event_type": "SERVICE_STOP",
+        "event_count": 8,
+        "pct": 1.59
+      }
+    ],
+    "error_count": 53,
+    "warning_count": 97,
+    "auth_failure_count": 29,
+    "database_error_count": 35,
+    "average_response_time_ms": 976.27,
+    "max_response_time_ms": 5000,
+    "slowest_endpoints": [
+      {
+        "endpoint": "/api/users/update",
+        "request_count": 8,
+        "avg_response_time_ms": 1286.0,
+        "max_response_time_ms": 1854
+      },
+      {
+        "endpoint": "/api/notifications",
+        "request_count": 13,
+        "avg_response_time_ms": 1118.0,
+        "max_response_time_ms": 1985
+      },
+      {
+        "endpoint": "/api/orders",
+        "request_count": 12,
+        "avg_response_time_ms": 1103.08,
+        "max_response_time_ms": 1977
+      },
+      {
+        "endpoint": "/api/logout",
+        "request_count": 11,
+        "avg_response_time_ms": 1047.09,
+        "max_response_time_ms": 1790
+      },
+      {
+        "endpoint": "/api/payments/process",
+        "request_count": 10,
+        "avg_response_time_ms": 984.3,
+        "max_response_time_ms": 1860
+      },
+      {
+        "endpoint": "/api/users",
+        "request_count": 14,
+        "avg_response_time_ms": 971.0,
+        "max_response_time_ms": 1831
+      },
+      {
+        "endpoint": "/api/inventory",
+        "request_count": 9,
+        "avg_response_time_ms": 968.44,
+        "max_response_time_ms": 1949
+      },
+      {
+        "endpoint": "/api/payments",
+        "request_count": 12,
+        "avg_response_time_ms": 964.42,
+        "max_response_time_ms": 1552
+      },
+      {
+        "endpoint": "/api/notifications/send",
+        "request_count": 16,
+        "avg_response_time_ms": 962.75,
+        "max_response_time_ms": 1781
+      },
+      {
+        "endpoint": "/api/inventory/check",
+        "request_count": 17,
+        "avg_response_time_ms": 954.18,
+        "max_response_time_ms": 1939
+      }
+    ],
+    "busiest_endpoints": [
+      {
+        "endpoint": "/api/inventory/check",
+        "request_count": 17,
+        "avg_response_time_ms": 954.18
+      },
+      {
+        "endpoint": "/api/notifications/send",
+        "request_count": 16,
+        "avg_response_time_ms": 962.75
+      },
+      {
+        "endpoint": "/api/users/profile",
+        "request_count": 15,
+        "avg_response_time_ms": 932.2
+      },
+      {
+        "endpoint": "/api/users",
+        "request_count": 14,
+        "avg_response_time_ms": 971.0
+      },
+      {
+        "endpoint": "/api/notifications",
+        "request_count": 13,
+        "avg_response_time_ms": 1118.0
+      },
+      {
+        "endpoint": "/api/payments",
+        "request_count": 12,
+        "avg_response_time_ms": 964.42
+      },
+      {
+        "endpoint": "/api/orders",
+        "request_count": 12,
+        "avg_response_time_ms": 1103.08
+      },
+      {
+        "endpoint": "/api/logout",
+        "request_count": 11,
+        "avg_response_time_ms": 1047.09
+      },
+      {
+        "endpoint": "/api/inventory/update",
+        "request_count": 11,
+        "avg_response_time_ms": 905.09
+      },
+      {
+        "endpoint": "/api/payments/process",
+        "request_count": 10,
+        "avg_response_time_ms": 984.3
+      }
+    ],
+    "service_performance": [
+      {
+        "service": "orders",
+        "total_count": 48,
+        "error_count": 9,
+        "avg_response_time_ms": 1043.63,
+        "max_response_time_ms": 5000
+      },
+      {
+        "service": "users",
+        "total_count": 62,
+        "error_count": 8,
+        "avg_response_time_ms": 1023.38,
+        "max_response_time_ms": 1929
+      },
+      {
+        "service": "auth",
+        "total_count": 62,
+        "error_count": 7,
+        "avg_response_time_ms": 944.87,
+        "max_response_time_ms": 1857
+      },
+      {
+        "service": "inventory",
+        "total_count": 62,
+        "error_count": 6,
+        "avg_response_time_ms": 943.05,
+        "max_response_time_ms": 1949
+      },
+      {
+        "service": "notifications",
+        "total_count": 54,
+        "error_count": 4,
+        "avg_response_time_ms": 1032.34,
+        "max_response_time_ms": 1985
+      },
+      {
+        "service": "payments",
+        "total_count": 49,
+        "error_count": 2,
+        "avg_response_time_ms": 869.64,
+        "max_response_time_ms": 1860
+      }
+    ],
+    "anomaly_count": 26,
+    "anomaly_rate": 5.18,
+    "anomalies_by_service": {
+      "UNKNOWN": 9,
+      "orders": 5,
+      "auth": 4,
+      "inventory": 3,
+      "payments": 3,
+      "notifications": 1,
+      "users": 1
+    },
+    "anomalies_by_event_type": {
+      "DATABASE_ERROR": 12,
+      "AUTH_FAILURE": 9,
+      "API_REQUEST": 3,
+      "SERVICE_STOP": 2
+    },
+    "anomalies_by_status": {
+      "500.0": 4
+    },
+    "top_anomalous_endpoints": {
+      "/api/login": 1,
+      "/api/orders/create": 1,
+      "/api/payments": 1
+    }
+  },
+  "anomaly_detection": {
+    "total_records": 502,
+    "anomaly_count": 26,
+    "anomaly_rate": 5.18,
+    "normal_count": 476,
+    "high_response_time_count": 10,
+    "server_error_count": 29,
+    "auth_failure_count": 29,
+    "database_error_count": 35,
+    "error_log_count": 53,
+    "anomalies_by_service": {
+      "UNKNOWN": 9,
+      "orders": 5,
+      "auth": 4,
+      "inventory": 3,
+      "payments": 3,
+      "notifications": 1,
+      "users": 1
+    },
+    "anomalies_by_event_type": {
+      "DATABASE_ERROR": 12,
+      "AUTH_FAILURE": 9,
+      "API_REQUEST": 3,
+      "SERVICE_STOP": 2
+    },
+    "anomalies_by_log_level": {
+      "WARN": 13,
+      "ERROR": 11,
+      "DEBUG": 2
+    },
+    "anomalies_by_status": {
+      "500.0": 4
+    },
+    "top_anomalous_endpoints": {
+      "/api/login": 1,
+      "/api/orders/create": 1,
+      "/api/payments": 1
+    }
+  },
+  "top_findings": [
+    "Highest-volume service: orders with 48 events",
+    "Highest error-count service: orders with 9 errors",
+    "Slowest endpoint: /api/users/update (avg 1286.0 ms)",
+    "Detected 26 anomalies (5.18% of total events)",
+    "Highest anomaly-producing event type: DATABASE_ERROR (12 anomalies)"
+  ]
+}

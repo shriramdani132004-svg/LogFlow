@@ -541,5 +541,155 @@ class TestCLIDetect(unittest.TestCase):
         )
 
 
+class TestAnomalyCSVJSONConsistency(unittest.TestCase):
+    def test_anomaly_count_csv_matches_json(self):
+        df = _make_df()
+        work, preprocessor = prepare_features(df)
+        work = detect_anomalies(work, preprocessor)
+        work = calculate_rule_signals(work)
+        work["anomaly_reason"] = work.apply(build_anomaly_reason, axis=1)
+        report = generate_anomaly_report(work)
+        with tempfile.TemporaryDirectory() as d:
+            csv_path, json_path = save_anomaly_results(work, report, output_dir=d)
+            csv_df = pd.read_csv(csv_path)
+            with open(json_path, "r", encoding="utf-8") as f:
+                json_report = json.load(f)
+            csv_anomaly_count = int(csv_df["is_anomaly"].sum())
+            self.assertEqual(csv_anomaly_count, json_report["anomaly_count"])
+
+    def test_total_records_csv_matches_json(self):
+        df = _make_df()
+        work, preprocessor = prepare_features(df)
+        work = detect_anomalies(work, preprocessor)
+        work = calculate_rule_signals(work)
+        work["anomaly_reason"] = work.apply(build_anomaly_reason, axis=1)
+        report = generate_anomaly_report(work)
+        with tempfile.TemporaryDirectory() as d:
+            csv_path, json_path = save_anomaly_results(work, report, output_dir=d)
+            csv_df = pd.read_csv(csv_path)
+            with open(json_path, "r", encoding="utf-8") as f:
+                json_report = json.load(f)
+            self.assertEqual(len(csv_df), json_report["total_records"])
+
+    def test_normal_plus_anomaly_equals_total(self):
+        df = _make_df()
+        work, preprocessor = prepare_features(df)
+        work = detect_anomalies(work, preprocessor)
+        work = calculate_rule_signals(work)
+        work["anomaly_reason"] = work.apply(build_anomaly_reason, axis=1)
+        report = generate_anomaly_report(work)
+        self.assertEqual(report["anomaly_count"] + report["normal_count"],
+                         report["total_records"])
+
+    def test_json_contains_all_breakdown_keys(self):
+        df = _make_df()
+        work, preprocessor = prepare_features(df)
+        work = detect_anomalies(work, preprocessor)
+        work = calculate_rule_signals(work)
+        work["anomaly_reason"] = work.apply(build_anomaly_reason, axis=1)
+        report = generate_anomaly_report(work)
+        required_keys = [
+            "total_records", "anomaly_count", "anomaly_rate", "normal_count",
+            "high_response_time_count", "server_error_count", "auth_failure_count",
+            "database_error_count", "error_log_count",
+            "anomalies_by_service", "anomalies_by_event_type",
+            "anomalies_by_log_level", "anomalies_by_status",
+            "top_anomalous_endpoints",
+        ]
+        for key in required_keys:
+            self.assertIn(key, report, f"Missing key: {key}")
+
+
+class TestAnomalyScoreRanges(unittest.TestCase):
+    def test_scores_are_finite(self):
+        df = _make_df()
+        work, preprocessor = prepare_features(df)
+        result = detect_anomalies(work, preprocessor)
+        scores = result["anomaly_score"].dropna()
+        self.assertTrue(np.all(np.isfinite(scores)))
+
+    def test_predictions_are_minus_one_or_one(self):
+        df = _make_df()
+        work, preprocessor = prepare_features(df)
+        result = detect_anomalies(work, preprocessor)
+        preds = result["ml_prediction"].dropna().unique()
+        self.assertTrue(all(p in [-1, 1] for p in preds))
+
+    def test_anomaly_flag_matches_prediction(self):
+        df = _make_df()
+        work, preprocessor = prepare_features(df)
+        result = detect_anomalies(work, preprocessor)
+        ml_anomalies = result["ml_prediction"] == -1
+        self.assertTrue((result["is_anomaly"] == ml_anomalies).all())
+
+
+class TestAnomalyReasonCombinations(unittest.TestCase):
+    def test_all_signals_concatenated(self):
+        row = {
+            "ml_prediction": -1, "high_response_time": True,
+            "server_error": True, "auth_failure": True,
+            "database_error": True, "error_log": True,
+        }
+        reason = build_anomaly_reason(row)
+        self.assertIn("Isolation Forest anomaly", reason)
+        self.assertIn("High response time", reason)
+        self.assertIn("5xx server error", reason)
+        self.assertIn("Authentication failure", reason)
+        self.assertIn("Database error", reason)
+        self.assertIn("Error log level", reason)
+        self.assertIn(" + ", reason)
+
+    def test_single_ml_signal(self):
+        row = {
+            "ml_prediction": -1, "high_response_time": False,
+            "server_error": False, "auth_failure": False,
+            "database_error": False, "error_log": False,
+        }
+        self.assertEqual(build_anomaly_reason(row), "Isolation Forest anomaly")
+
+    def test_only_rule_signals(self):
+        row = {
+            "ml_prediction": 1, "high_response_time": True,
+            "server_error": False, "auth_failure": False,
+            "database_error": False, "error_log": False,
+        }
+        self.assertEqual(build_anomaly_reason(row), "High response time")
+
+    def test_empty_reason_when_no_signals(self):
+        row = {
+            "ml_prediction": 1, "high_response_time": False,
+            "server_error": False, "auth_failure": False,
+            "database_error": False, "error_log": False,
+        }
+        self.assertEqual(build_anomaly_reason(row), "")
+
+    def test_error_log_only(self):
+        row = {
+            "ml_prediction": 1, "high_response_time": False,
+            "server_error": False, "auth_failure": False,
+            "database_error": False, "error_log": True,
+        }
+        self.assertEqual(build_anomaly_reason(row), "Error log level")
+
+
+class TestAnomalyReportBreakdowns(unittest.TestCase):
+    def test_empty_anomaly_df_breakdowns(self):
+        df = _make_df()
+        work, preprocessor = prepare_features(df)
+        work["anomaly_score"] = np.nan
+        work["ml_prediction"] = 1
+        work["is_anomaly"] = False
+        work["high_response_time"] = False
+        work["server_error"] = False
+        work["auth_failure"] = False
+        work["database_error"] = False
+        work["error_log"] = False
+        report = generate_anomaly_report(work)
+        self.assertEqual(report["anomaly_count"], 0)
+        self.assertEqual(report["anomalies_by_service"], {})
+        self.assertEqual(report["anomalies_by_event_type"], {})
+        self.assertEqual(report["top_anomalous_endpoints"], {})
+
+
 if __name__ == "__main__":
     unittest.main()

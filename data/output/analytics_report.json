@@ -80,7 +80,7 @@
       "pct": 32.87
     },
     {
-      "service": "users",
+      "service": "inventory",
       "event_count": 62,
       "pct": 12.35
     },
@@ -90,7 +90,7 @@
       "pct": 12.35
     },
     {
-      "service": "inventory",
+      "service": "users",
       "event_count": 62,
       "pct": 12.35
     },
@@ -270,14 +270,14 @@
       "avg_response_time_ms": 1118.0
     },
     {
-      "endpoint": "/api/orders",
-      "request_count": 12,
-      "avg_response_time_ms": 1103.08
-    },
-    {
       "endpoint": "/api/payments",
       "request_count": 12,
       "avg_response_time_ms": 964.42
+    },
+    {
+      "endpoint": "/api/orders",
+      "request_count": 12,
+      "avg_response_time_ms": 1103.08
     },
     {
       "endpoint": "/api/logout",
@@ -290,9 +290,9 @@
       "avg_response_time_ms": 905.09
     },
     {
-      "endpoint": "/api/register",
+      "endpoint": "/api/payments/process",
       "request_count": 10,
-      "avg_response_time_ms": 928.1
+      "avg_response_time_ms": 984.3
     }
   ],
   "service_performance": [
@@ -356,12 +356,7 @@
       "pct": 2.56
     },
     {
-      "user_id": "U1069",
-      "event_count": 6,
-      "pct": 1.92
-    },
-    {
-      "user_id": "U1047",
+      "user_id": "U1020",
       "event_count": 6,
       "pct": 1.92
     },
@@ -371,47 +366,27 @@
       "pct": 1.92
     },
     {
-      "user_id": "U1014",
-      "event_count": 6,
-      "pct": 1.92
-    },
-    {
-      "user_id": "U1020",
-      "event_count": 6,
-      "pct": 1.92
-    },
-    {
       "user_id": "U1068",
       "event_count": 6,
       "pct": 1.92
     },
     {
-      "user_id": "U1092",
-      "event_count": 5,
-      "pct": 1.6
+      "user_id": "U1047",
+      "event_count": 6,
+      "pct": 1.92
     },
     {
-      "user_id": "U1094",
-      "event_count": 5,
-      "pct": 1.6
+      "user_id": "U1069",
+      "event_count": 6,
+      "pct": 1.92
     },
     {
-      "user_id": "U1016",
-      "event_count": 5,
-      "pct": 1.6
+      "user_id": "U1014",
+      "event_count": 6,
+      "pct": 1.92
     },
     {
-      "user_id": "U1042",
-      "event_count": 5,
-      "pct": 1.6
-    },
-    {
-      "user_id": "U1062",
-      "event_count": 5,
-      "pct": 1.6
-    },
-    {
-      "user_id": "U1051",
+      "user_id": "U1057",
       "event_count": 5,
       "pct": 1.6
     },
@@ -421,17 +396,7 @@
       "pct": 1.6
     },
     {
-      "user_id": "U1081",
-      "event_count": 5,
-      "pct": 1.6
-    },
-    {
-      "user_id": "U1073",
-      "event_count": 5,
-      "pct": 1.6
-    },
-    {
-      "user_id": "U1089",
+      "user_id": "U1051",
       "event_count": 5,
       "pct": 1.6
     },
@@ -446,7 +411,7 @@
       "pct": 1.6
     },
     {
-      "user_id": "U1057",
+      "user_id": "U1016",
       "event_count": 5,
       "pct": 1.6
     },
@@ -461,17 +426,57 @@
       "pct": 1.6
     },
     {
+      "user_id": "U1081",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1073",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1094",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1092",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1089",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
       "user_id": "U1007",
       "event_count": 5,
       "pct": 1.6
     },
     {
-      "user_id": "U1050",
+      "user_id": "U1062",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1042",
+      "event_count": 5,
+      "pct": 1.6
+    },
+    {
+      "user_id": "U1058",
       "event_count": 4,
       "pct": 1.28
     },
     {
-      "user_id": "U1058",
+      "user_id": "U1000",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1071",
       "event_count": 4,
       "pct": 1.28
     },
@@ -486,42 +491,7 @@
       "pct": 1.28
     },
     {
-      "user_id": "U1070",
-      "event_count": 4,
-      "pct": 1.28
-    },
-    {
-      "user_id": "U1029",
-      "event_count": 4,
-      "pct": 1.28
-    },
-    {
-      "user_id": "U1071",
-      "event_count": 4,
-      "pct": 1.28
-    },
-    {
-      "user_id": "U1048",
-      "event_count": 4,
-      "pct": 1.28
-    },
-    {
-      "user_id": "U1031",
-      "event_count": 4,
-      "pct": 1.28
-    },
-    {
-      "user_id": "U1017",
-      "event_count": 4,
-      "pct": 1.28
-    },
-    {
-      "user_id": "U1000",
-      "event_count": 4,
-      "pct": 1.28
-    },
-    {
-      "user_id": "U1006",
+      "user_id": "U1008",
       "event_count": 4,
       "pct": 1.28
     },
@@ -531,34 +501,49 @@
       "pct": 1.28
     },
     {
-      "user_id": "U1087",
-      "event_count": 4,
-      "pct": 1.28
-    },
-    {
       "user_id": "U1010",
       "event_count": 4,
       "pct": 1.28
     },
     {
-      "user_id": "U1008",
+      "user_id": "U1029",
       "event_count": 4,
       "pct": 1.28
     },
     {
-      "user_id": "U1088",
-      "event_count": 3,
-      "pct": 0.96
+      "user_id": "U1017",
+      "event_count": 4,
+      "pct": 1.28
     },
     {
-      "user_id": "U1083",
-      "event_count": 3,
-      "pct": 0.96
+      "user_id": "U1006",
+      "event_count": 4,
+      "pct": 1.28
     },
     {
-      "user_id": "U1086",
-      "event_count": 3,
-      "pct": 0.96
+      "user_id": "U1031",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1087",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1070",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1050",
+      "event_count": 4,
+      "pct": 1.28
+    },
+    {
+      "user_id": "U1048",
+      "event_count": 4,
+      "pct": 1.28
     },
     {
       "user_id": "U1025",
@@ -566,17 +551,7 @@
       "pct": 0.96
     },
     {
-      "user_id": "U1072",
-      "event_count": 3,
-      "pct": 0.96
-    },
-    {
-      "user_id": "U1076",
-      "event_count": 3,
-      "pct": 0.96
-    },
-    {
-      "user_id": "U1099",
+      "user_id": "U1011",
       "event_count": 3,
       "pct": 0.96
     },
@@ -586,32 +561,27 @@
       "pct": 0.96
     },
     {
-      "user_id": "U1035",
-      "event_count": 3,
-      "pct": 0.96
-    },
-    {
-      "user_id": "U1082",
-      "event_count": 3,
-      "pct": 0.96
-    },
-    {
-      "user_id": "U1085",
-      "event_count": 3,
-      "pct": 0.96
-    },
-    {
-      "user_id": "U1065",
-      "event_count": 3,
-      "pct": 0.96
-    },
-    {
       "user_id": "U1024",
       "event_count": 3,
       "pct": 0.96
     },
     {
-      "user_id": "U1090",
+      "user_id": "U1027",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1028",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1030",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1035",
       "event_count": 3,
       "pct": 0.96
     },
@@ -626,6 +596,31 @@
       "pct": 0.96
     },
     {
+      "user_id": "U1055",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1059",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1065",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1072",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1076",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
       "user_id": "U1077",
       "event_count": 3,
       "pct": 0.96
@@ -636,22 +631,32 @@
       "pct": 0.96
     },
     {
-      "user_id": "U1055",
+      "user_id": "U1082",
       "event_count": 3,
       "pct": 0.96
     },
     {
-      "user_id": "U1011",
+      "user_id": "U1083",
       "event_count": 3,
       "pct": 0.96
     },
     {
-      "user_id": "U1059",
+      "user_id": "U1085",
       "event_count": 3,
       "pct": 0.96
     },
     {
-      "user_id": "U1027",
+      "user_id": "U1086",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1088",
+      "event_count": 3,
+      "pct": 0.96
+    },
+    {
+      "user_id": "U1090",
       "event_count": 3,
       "pct": 0.96
     },
@@ -661,17 +666,17 @@
       "pct": 0.96
     },
     {
-      "user_id": "U1030",
+      "user_id": "U1099",
       "event_count": 3,
       "pct": 0.96
     },
     {
-      "user_id": "U1028",
-      "event_count": 3,
-      "pct": 0.96
+      "user_id": "U1009",
+      "event_count": 2,
+      "pct": 0.64
     },
     {
-      "user_id": "U1061",
+      "user_id": "U1078",
       "event_count": 2,
       "pct": 0.64
     },
@@ -681,27 +686,7 @@
       "pct": 0.64
     },
     {
-      "user_id": "U1033",
-      "event_count": 2,
-      "pct": 0.64
-    },
-    {
-      "user_id": "U1041",
-      "event_count": 2,
-      "pct": 0.64
-    },
-    {
-      "user_id": "U1003",
-      "event_count": 2,
-      "pct": 0.64
-    },
-    {
-      "user_id": "U1022",
-      "event_count": 2,
-      "pct": 0.64
-    },
-    {
-      "user_id": "U1026",
+      "user_id": "U1012",
       "event_count": 2,
       "pct": 0.64
     },
@@ -711,7 +696,27 @@
       "pct": 0.64
     },
     {
-      "user_id": "U1064",
+      "user_id": "U1041",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1040",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1033",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1021",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1061",
       "event_count": 2,
       "pct": 0.64
     },
@@ -726,22 +731,12 @@
       "pct": 0.64
     },
     {
-      "user_id": "U1040",
+      "user_id": "U1064",
       "event_count": 2,
       "pct": 0.64
     },
     {
-      "user_id": "U1078",
-      "event_count": 2,
-      "pct": 0.64
-    },
-    {
-      "user_id": "U1021",
-      "event_count": 2,
-      "pct": 0.64
-    },
-    {
-      "user_id": "U1009",
+      "user_id": "U1003",
       "event_count": 2,
       "pct": 0.64
     },
@@ -751,22 +746,52 @@
       "pct": 0.64
     },
     {
-      "user_id": "U1012",
+      "user_id": "U1022",
       "event_count": 2,
       "pct": 0.64
     },
     {
-      "user_id": "U1045",
+      "user_id": "U1026",
+      "event_count": 2,
+      "pct": 0.64
+    },
+    {
+      "user_id": "U1066",
       "event_count": 1,
       "pct": 0.32
     },
     {
-      "user_id": "U1093",
+      "user_id": "U1038",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1023",
       "event_count": 1,
       "pct": 0.32
     },
     {
       "user_id": "U1074",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1096",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1005",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1079",
+      "event_count": 1,
+      "pct": 0.32
+    },
+    {
+      "user_id": "U1002",
       "event_count": 1,
       "pct": 0.32
     },
@@ -781,32 +806,12 @@
       "pct": 0.32
     },
     {
-      "user_id": "U1002",
+      "user_id": "U1045",
       "event_count": 1,
       "pct": 0.32
     },
     {
-      "user_id": "U1079",
-      "event_count": 1,
-      "pct": 0.32
-    },
-    {
-      "user_id": "U1096",
-      "event_count": 1,
-      "pct": 0.32
-    },
-    {
-      "user_id": "U1038",
-      "event_count": 1,
-      "pct": 0.32
-    },
-    {
-      "user_id": "U1066",
-      "event_count": 1,
-      "pct": 0.32
-    },
-    {
-      "user_id": "U1005",
+      "user_id": "U1053",
       "event_count": 1,
       "pct": 0.32
     },
@@ -816,12 +821,7 @@
       "pct": 0.32
     },
     {
-      "user_id": "U1023",
-      "event_count": 1,
-      "pct": 0.32
-    },
-    {
-      "user_id": "U1053",
+      "user_id": "U1093",
       "event_count": 1,
       "pct": 0.32
     },

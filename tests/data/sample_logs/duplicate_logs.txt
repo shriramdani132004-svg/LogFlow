@@ -1,0 +1,5 @@
+2026-09-20 10:15:32,123 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=142 | user_id=U1024
+2026-09-20 10:15:35,447 | INFO | USER_LOGIN | user_id=U2048 | ip=192.168.1.100 | login_method=password
+2026-09-20 10:15:32,123 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=142 | user_id=U1024
+2026-09-20 10:16:02,901 | WARN | DATABASE_QUERY | service=orders | table=orders | query_time_ms=450
+2026-09-20 10:15:35,447 | INFO | USER_LOGIN | user_id=U2048 | ip=192.168.1.100 | login_method=password

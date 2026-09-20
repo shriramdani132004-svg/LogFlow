@@ -2,11 +2,72 @@
 
 Application Log Processing & Anomaly Detection Pipeline
 
-LogFlow is a Python-based pipeline that generates, parses, and analyzes application log data to detect anomalies and surface operational insights. It covers the full workflow from raw log generation through data cleaning, database storage, SQL analytics, and anomaly detection.
+## Problem Statement
 
-## Current State
+Application logs contain critical operational data, but raw logs are unstructured and difficult to analyze at scale. Manual log review fails to detect anomalies in real-time, leading to delayed incident response and missed performance issues.
 
-**Parts 1-6 are complete.** The project generates realistic application logs, parses and cleans them into structured data, stores the results in PostgreSQL, runs SQL analytics, and detects anomalies using Isolation Forest.
+## Project Objective
+
+LogFlow automates the end-to-end workflow of ingesting, parsing, storing, analyzing, and visualizing application log data. It detects anomalous events using machine learning and rule-based signals, providing operational insights through an interactive dashboard.
+
+## Main Features
+
+- Realistic synthetic log generation with configurable record counts
+- Pipe-delimited log format parsing with structured field extraction
+- Data validation, cleaning, and duplicate detection
+- PostgreSQL storage with idempotent batch loading
+- 13 SQL analytics queries for operational insights
+- Isolation Forest anomaly detection with explainable rule-based signals
+- Comprehensive data quality and operational reporting
+- Interactive Streamlit dashboard with filters
+
+## Technology Stack
+
+| Technology | Purpose |
+|-----------|---------|
+| Python 3.10+ | Core language |
+| PostgreSQL 14+ | Database storage and SQL analytics |
+| Pandas | Data manipulation and analysis |
+| Scikit-learn | Isolation Forest anomaly detection |
+| Streamlit | Interactive web dashboard |
+| Pytest | Test framework |
+
+## Complete Pipeline Workflow
+
+```
+Raw Application Logs
+        |
+Log Generation / Ingestion
+        |
+Parsing / Validation
+        |
+Cleaning / Duplicate Detection
+        |
+Cleaned Data (CSV)
+        |
+PostgreSQL Database
+        |
+SQL Analytics  <-->  Anomaly Detection
+        |                    |
+Reports / CSV / JSON  <------+
+        |
+Streamlit Dashboard
+```
+
+## Parts 1-10 Status
+
+| Part | Topic | Status |
+|------|-------|--------|
+| Part 1 | Project Foundation | Complete |
+| Part 2 | Log Generation & Ingestion | Complete |
+| Part 3 | Log Parsing & Data Cleaning | Complete |
+| Part 4 | PostgreSQL Data Pipeline | Complete |
+| Part 5 | SQL Analytics | Complete |
+| Part 6 | Anomaly Detection | Complete |
+| Part 7 | Data Quality Reporting | Complete |
+| Part 8 | Streamlit Dashboard | Complete |
+| Part 9 | Testing & Documentation | Complete |
+| Part 10 | Resume & Interview Preparation | Complete |
 
 ## Project Structure
 
@@ -14,23 +75,22 @@ LogFlow is a Python-based pipeline that generates, parses, and analyzes applicat
 LogFlow/
 ├── app/
 │   ├── __init__.py
-│   ├── config.py
-│   ├── main.py
-│   ├── log_generator.py
-│   ├── ingestion.py
-│   ├── log_parser.py
-│   ├── processor.py
-│   ├── database.py
-│   ├── db_loader.py
-│   ├── analytics.py
-│   └── anomaly_detection.py
-├── data/
-│   ├── input/
-│   └── output/
-├── logs/
+│   ├── config.py               # Environment and path configuration
+│   ├── main.py                 # Application entry point
+│   ├── log_generator.py        # Synthetic log generation
+│   ├── ingestion.py            # Raw log file reading
+│   ├── log_parser.py           # Log line parsing
+│   ├── processor.py            # Validation, cleaning, deduplication
+│   ├── database.py             # PostgreSQL connection management
+│   ├── db_loader.py            # CSV-to-database loading
+│   ├── analytics.py            # SQL analytics queries
+│   ├── anomaly_detection.py    # ML anomaly detection
+│   └── reporting.py            # Report generation
+├── dashboard.py                # Streamlit web dashboard
+├── run.py                      # CLI entry point
 ├── sql/
-│   ├── schema.sql
-│   └── analytics.sql
+│   ├── schema.sql              # Database schema
+│   └── analytics.sql           # Analytics queries
 ├── tests/
 │   ├── __init__.py
 │   ├── test_log_generator.py
@@ -40,247 +100,236 @@ LogFlow/
 │   ├── test_database.py
 │   ├── test_db_loader.py
 │   ├── test_analytics.py
-│   └── test_anomaly_detection.py
-├── .env.example
-├── .gitignore
+│   ├── test_anomaly_detection.py
+│   ├── test_reporting.py
+│   ├── test_dashboard.py
+│   └── data/sample_logs/       # Sample datasets for testing
+│       ├── valid_logs.txt
+│       ├── malformed_logs.txt
+│       ├── missing_value_logs.txt
+│       ├── duplicate_logs.txt
+│       └── anomaly_logs.txt
+├── docs/
+│   ├── architecture.md
+│   ├── setup.md
+│   └── testing.md
+├── data/
+│   ├── input/                  # Generated raw log files
+│   └── output/                 # All generated outputs
+├── .env                        # Environment variables (not committed)
 ├── requirements.txt
-├── README.md
-└── run.py
+└── README.md
 ```
 
 ## Prerequisites
 
 - Python 3.10+
 - PostgreSQL 14+
+- pip (Python package manager)
 
-## Setup
+## PostgreSQL Requirements
 
-1. Clone the repository
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # Linux/Mac
-   venv\Scripts\activate      # Windows
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Create the PostgreSQL database:
-   ```bash
-   createdb logflow
-   ```
-   Or on Windows:
-   ```bash
-   createdb -U postgres logflow
-   ```
-5. Create a `.env` file from the example:
-   ```bash
-   cp .env.example .env
-   ```
-   Edit `.env` with your PostgreSQL credentials. At minimum, set `DB_PASSWORD`.
+A running PostgreSQL instance with a user that has CREATE and INSERT permissions. The pipeline creates and manages a `logflow` database.
 
-## Usage
+## Environment Configuration
 
-### Full Pipeline
+Create a `.env` file in the project root:
+
+```
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=logflow
+DB_USER=postgres
+DB_PASSWORD=your_password_here
+DB_BATCH_SIZE=500
+```
+
+## Installation & Setup
 
 ```bash
-python run.py generate --records 1000
+# Clone repository
+git clone <repository-url>
+cd LogFlow
+
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate          # Windows
+source venv/bin/activate       # Linux/Mac
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Create PostgreSQL database
+createdb -U postgres logflow
+
+# Create .env file with your credentials
+```
+
+## CLI Commands
+
+### Log Generation
+
+```bash
+python run.py generate              # Generate 100 sample logs (default)
+python run.py generate --records 500  # Generate 500 sample logs
+```
+
+### Ingestion
+
+```bash
 python run.py ingest
+```
+
+Reads raw log files from `data/input/` into memory.
+
+### Processing
+
+```bash
 python run.py process
+```
+
+Parses, validates, cleans, and deduplicates logs. Outputs `cleaned_logs.csv` and `rejected_logs.csv` to `data/output/`.
+
+### Database Initialization
+
+```bash
 python run.py db-init
+```
+
+Creates the `log_events` table with constraints and indexes.
+
+### Database Loading
+
+```bash
 python run.py db-load
+```
+
+Loads `cleaned_logs.csv` into PostgreSQL using batch inserts with idempotent ON CONFLICT handling.
+
+### Database Verification
+
+```bash
 python run.py db-verify
-python run.py analyze
-python run.py detect
 ```
 
-### Individual Commands
+Verifies table existence, row counts, and timestamp ranges.
 
-| Command | Description |
-|---------|-------------|
-| `python run.py` | Start LogFlow foundation |
-| `python run.py generate` | Generate 100 sample logs |
-| `python run.py generate --records N` | Generate N sample logs |
-| `python run.py ingest` | Ingest raw logs |
-| `python run.py process` | Parse, validate, and clean logs |
-| `python run.py db-init` | Initialize database schema |
-| `python run.py db-load` | Load cleaned CSV into PostgreSQL |
-| `python run.py db-verify` | Verify database contents |
-| `python run.py analyze` | Run SQL analytics on log data |
-| `python run.py detect` | Run anomaly detection |
-
-## Database Schema
-
-The `log_events` table stores structured log records:
-
-| Column | Type | Nullable | Description |
-|--------|------|----------|-------------|
-| id | BIGINT | No | Auto-generated primary key |
-| timestamp | TIMESTAMP | No | Event timestamp |
-| log_level | VARCHAR(10) | No | DEBUG, INFO, WARN, ERROR |
-| event_type | VARCHAR(30) | No | API_REQUEST, USER_LOGIN, etc. |
-| service | VARCHAR(30) | Yes | Service name |
-| endpoint | VARCHAR(100) | Yes | API endpoint |
-| method | VARCHAR(10) | Yes | HTTP method |
-| status | INTEGER | Yes | HTTP status code |
-| response_time_ms | INTEGER | Yes | Response time |
-| user_id | VARCHAR(20) | Yes | User identifier |
-| message | TEXT | Yes | Additional context |
-| record_hash | VARCHAR(64) | No | SHA-256 fingerprint for deduplication |
-
-### Constraints
-
-- `chk_log_level`: log_level must be DEBUG, INFO, WARN, or ERROR
-- `chk_response_time`: response_time_ms must be >= 0 when present
-- `chk_status`: status must be between 100 and 599 when present
-- `record_hash`: unique constraint for idempotent loading
-
-### Indexes
-
-- `timestamp`: for time-range queries and trend analysis
-- `log_level`: for error analysis and severity filtering
-- `event_type`: for event distribution analysis
-- `service`: for per-service analysis
-- `endpoint`: for API usage analysis
-- `user_id`: for user activity analysis
-- `log_level + service + timestamp`: composite index for error analysis
-
-## Configuration
-
-Configuration is managed through environment variables and `.env`:
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| DB_HOST | localhost | PostgreSQL host |
-| DB_PORT | 5432 | PostgreSQL port |
-| DB_NAME | logflow | Database name |
-| DB_USER | postgres | Database user |
-| DB_PASSWORD | (empty) | Database password |
-| DB_BATCH_SIZE | 500 | Batch size for inserts |
-
-## Part 5 – SQL Analytics
-
-The analytics layer reads from the PostgreSQL `log_events` table and produces operational statistics.
-
-### Analytics Produced
-
-- **Overall summary**: total records, time range
-- **Log level distribution**: DEBUG, INFO, WARN, ERROR counts with percentages
-- **Event type distribution**: API_REQUEST, USER_LOGIN, etc.
-- **Service distribution**: per-service event counts
-- **HTTP status code and class distribution**: 2xx, 3xx, 4xx, 5xx
-- **Error summary**: total errors, warnings, auth failures, database errors
-- **Response time statistics**: average, minimum, maximum
-- **Slowest endpoints**: top endpoints by average response time
-- **Most-used endpoints**: top endpoints by request count
-- **Service performance**: per-service counts, errors, and response times
-- **Hourly traffic**: event counts grouped by hour
-- **User activity**: unique users and events per user
-
-### Running Analytics
+### Analytics
 
 ```bash
 python run.py analyze
 ```
 
-This prints a human-readable report to the console and saves a JSON report to:
+Runs 13 SQL analytics queries. Saves `analytics_report.json` to `data/output/`.
 
-```
-data/output/analytics_report.json
-```
-
-### SQL Queries
-
-All analytics SQL is defined in `sql/analytics.sql` and can be run directly against PostgreSQL.
-
-## Troubleshooting
-
-### Connection refused
-
-```
-connection to server at "localhost" failed: Connection refused
-```
-
-**Solution:** Ensure PostgreSQL is running. Check with `pg_isready` or start the service.
-
-### Authentication failed
-
-```
-password authentication failed for user "postgres"
-```
-
-**Solution:** Verify your password in `.env` matches your PostgreSQL password.
-
-### Database does not exist
-
-```
-database "logflow" does not exist
-```
-
-**Solution:** Create the database:
-```bash
-createdb logflow
-```
-
-### Permission denied
-
-```
-permission denied for table log_events
-```
-
-**Solution:** Ensure your PostgreSQL user has CREATE and INSERT permissions on the database.
-
-### Missing required columns
-
-```
-ValueError: Missing required columns: ['timestamp']
-```
-
-**Solution:** Ensure `cleaned_logs.csv` was generated by `python run.py process`.
-
-## Part 6 – Anomaly Detection
-
-Identifies unusual application log events using a machine learning model plus explainable rule-based signals.
-
-### Approach
-
-- **Isolation Forest** (scikit-learn) detects statistically unusual records based on engineered features
-- **Rule-based signals** provide explainable context: high response times, 5xx errors, authentication failures, database errors, error log levels
-- **Feature engineering** converts raw logs into numeric + categorical features (response time, status, error indicators, time-of-day, service/event type)
-- **Deterministic** with fixed `random_state` for reproducibility
-
-### Running Detection
+### Anomaly Detection
 
 ```bash
 python run.py detect
 python run.py detect --contamination 0.05
 ```
 
-### Output Files
+Runs Isolation Forest + rule-based detection. Saves `anomalies.csv` and `anomaly_report.json`.
 
-- `data/output/anomalies.csv` — full scored dataset with anomaly labels and reasons
-- `data/output/anomaly_report.json` — summary metrics and breakdowns
+### Reporting
 
-### Anomaly Explanation
+```bash
+python run.py report
+```
 
-Each record receives an `anomaly_reason` string combining ML prediction with rule-based signals:
+Generates data quality, operational, and final reports.
 
-- `Isolation Forest anomaly` — flagged by the ML model
-- `High response time` — above 95th percentile
-- `5xx server error` — HTTP 5xx status
-- `Authentication failure` — AUTH_FAILURE event
-- `Database error` — DATABASE_ERROR event
+### Dashboard
 
-## Roadmap
+```bash
+streamlit run dashboard.py
+```
 
-- **Part 1** - Project Foundation
-- **Part 2** - Log Generation & Ingestion
-- **Part 3** - Log Parsing & Data Cleaning
-- **Part 4** - PostgreSQL Data Pipeline
-- **Part 5** - SQL Analytics
-- **Part 6** - Anomaly Detection *(current)*
-- **Part 7** - Data Quality Reporting
-- **Part 8** - Final Data Product
-- **Part 9** - Testing & Documentation
-- **Part 10** - Resume & Interview Preparation
+Opens interactive dashboard at http://localhost:8501
+
+### Testing
+
+```bash
+python -m pytest -q
+```
+
+## Expected Output Files
+
+All outputs are saved to `data/output/`:
+
+| File | Description |
+|------|-------------|
+| `cleaned_logs.csv` | Parsed and cleaned log records |
+| `rejected_logs.csv` | Records that failed validation |
+| `analytics_report.json` | SQL analytics results |
+| `anomalies.csv` | Full scored dataset with anomaly labels |
+| `anomaly_report.json` | Anomaly detection summary |
+| `data_quality_report.json` | Data quality check results |
+| `data_quality_summary.csv` | Quality metrics in CSV format |
+| `operational_report.json` | Operational metrics summary |
+| `final_report.json` | Combined final report |
+| `final_report.txt` | Human-readable final report |
+
+## Sample Datasets
+
+Located in `tests/data/sample_logs/`:
+
+- **valid_logs.txt**: 10 valid log lines covering all 9 event types
+- **malformed_logs.txt**: Mix of valid and malformed lines for testing rejection
+- **missing_value_logs.txt**: Logs with varying field completeness
+- **duplicate_logs.txt**: Logs with intentional duplicate records
+- **anomaly_logs.txt**: Logs with patterns designed to trigger anomaly detection (high response times, 5xx errors, auth failures)
+
+These are small, human-readable datasets used for unit testing. They do not replace the realistic 500-record generated workflow.
+
+## Data Quality Behavior
+
+Data quality checks run as part of the reporting stage:
+
+- **Required fields**: timestamp, log_level, event_type must be non-NULL
+- **Optional fields**: service, endpoint, method, status, response_time_ms, user_id checked for NULL rates
+- **Validity**: HTTP status codes must be 100-599, response times must be non-negative
+- **Uniqueness**: No duplicate record IDs
+- **Consistency**: Log levels must be valid (DEBUG, INFO, WARN, ERROR)
+
+Quality score is computed as: (passed checks / total checks) * 100
+
+## Anomaly Detection Behavior
+
+- Uses Isolation Forest (unsupervised ML) on engineered features
+- Features include: response_time_ms, status, error indicators, time-of-day, service/event type
+- Rule-based signals provide explainable context alongside ML predictions
+- Each anomaly gets an `anomaly_reason` string combining ML and rule signals
+- Deterministic with fixed random_state for reproducibility
+- Contamination parameter controls expected anomaly fraction (default: 5%)
+
+## Limitations
+
+- Uses generated/simulated application logs, not real production data
+- File-based ingestion (no real-time streaming)
+- Local PostgreSQL deployment only
+- Limited dataset scale (hundreds to low thousands of records)
+- Threshold sensitivity in anomaly detection (95th percentile for high response time)
+- Streamlit provides a functional but basic dashboard interface
+- Isolation Forest is unsupervised and does not guarantee production-grade accuracy
+- No alerting or notification system
+- No model monitoring or drift detection
+
+## Future Improvements
+
+- Real-time streaming ingestion (Kafka or similar)
+- Cloud-based PostgreSQL deployment
+- Better feature engineering for anomaly detection
+- Model monitoring and drift detection
+- Alerting system for anomaly thresholds
+- Richer dashboard with drill-down capabilities
+- Distributed processing for large-scale logs
+- Authentication and multi-tenancy
+
+## Interview Explanation
+
+LogFlow is an end-to-end log processing pipeline built with Python, PostgreSQL, and scikit-learn. It generates realistic application logs, parses them into structured data using a pipe-delimited format, validates and cleans the records, stores them in PostgreSQL, and runs SQL analytics for operational insights. The anomaly detection stage uses Isolation Forest on engineered features combined with rule-based signals to identify unusual events. Results are presented through a Streamlit dashboard and comprehensive reports. The project demonstrates ETL processing, database management, data quality validation, machine learning, and data visualization.
+
+## Concise Interview Explanation
+
+I built LogFlow, a Python pipeline that processes application logs through parsing, cleaning, PostgreSQL storage, SQL analytics, and Isolation Forest anomaly detection. It includes a Streamlit dashboard for visualization and comprehensive test coverage using pytest.

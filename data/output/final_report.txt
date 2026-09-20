@@ -1,0 +1,35 @@
+# LOGFLOW FINAL REPORT
+
+Generated: 2026-09-20T21:18:53.593572
+
+## Dataset
+
+Total records: 502
+Time range: 2026-09-20T08:00:00.271000 to 2026-09-20T10:16:00
+
+## Data Quality
+
+Quality score: 50.0%
+Checks passed: 11
+Checks failed: 1
+
+## Operational Summary
+
+Errors: 53
+Warnings: 97
+Average response time: 976.27 ms
+5xx responses: 502
+
+## Anomaly Detection
+
+Anomalies: 26
+Anomaly rate: 5.18%
+
+## Top Findings
+
+1. Highest-volume service: orders with 48 events
+2. Highest error-count service: orders with 9 errors
+3. Slowest endpoint: /api/users/update (avg 1286.0 ms)
+4. Detected 26 anomalies (5.18% of total events)
+5. Highest anomaly-producing event type: DATABASE_ERROR (12 anomalies)
+

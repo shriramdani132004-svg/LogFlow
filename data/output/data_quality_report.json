@@ -1,0 +1,187 @@
+{
+  "total_records": 502,
+  "earliest_timestamp": "2026-09-20 08:00:00.271000",
+  "latest_timestamp": "2026-09-20 10:16:00",
+  "quality_checks_passed": 11,
+  "quality_checks_failed": 1,
+  "quality_checks_warned": 10,
+  "quality_score": 50.0,
+  "checks": [
+    {
+      "check_name": "timestamp_completeness",
+      "category": "completeness",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "timestamp: 0 NULL values (0.0%)"
+    },
+    {
+      "check_name": "log_level_completeness",
+      "category": "completeness",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "log_level: 0 NULL values (0.0%)"
+    },
+    {
+      "check_name": "event_type_completeness",
+      "category": "completeness",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "event_type: 0 NULL values (0.0%)"
+    },
+    {
+      "check_name": "service_completeness",
+      "category": "completeness",
+      "status": "PASS",
+      "value": 165,
+      "threshold": 0,
+      "message": "service: 165 NULL values (32.87%)"
+    },
+    {
+      "check_name": "endpoint_completeness",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 314,
+      "threshold": 0,
+      "message": "endpoint: 314 NULL values (62.55%)"
+    },
+    {
+      "check_name": "method_completeness",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 314,
+      "threshold": 0,
+      "message": "method: 314 NULL values (62.55%)"
+    },
+    {
+      "check_name": "status_completeness",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 313,
+      "threshold": 0,
+      "message": "status: 313 NULL values (62.35%)"
+    },
+    {
+      "check_name": "response_time_ms_completeness",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 313,
+      "threshold": 0,
+      "message": "response_time_ms: 313 NULL values (62.35%)"
+    },
+    {
+      "check_name": "user_id_completeness",
+      "category": "completeness",
+      "status": "PASS",
+      "value": 190,
+      "threshold": 0,
+      "message": "user_id: 190 NULL values (37.85%)"
+    },
+    {
+      "check_name": "negative_response_times",
+      "category": "validity",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "0 negative response times"
+    },
+    {
+      "check_name": "invalid_http_status",
+      "category": "validity",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "0 invalid HTTP statuses"
+    },
+    {
+      "check_name": "duplicate_ids",
+      "category": "uniqueness",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "0 duplicate record IDs"
+    },
+    {
+      "check_name": "valid_log_levels",
+      "category": "consistency",
+      "status": "FAIL",
+      "value": -503,
+      "threshold": 0,
+      "message": "-503 invalid log levels"
+    },
+    {
+      "check_name": "timestamp_null_count",
+      "category": "completeness",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "timestamp: 0 NULLs"
+    },
+    {
+      "check_name": "log_level_null_count",
+      "category": "completeness",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "log_level: 0 NULLs"
+    },
+    {
+      "check_name": "event_type_null_count",
+      "category": "completeness",
+      "status": "PASS",
+      "value": 0,
+      "threshold": 0,
+      "message": "event_type: 0 NULLs"
+    },
+    {
+      "check_name": "service_null_count",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 165,
+      "threshold": 0,
+      "message": "service: 165 NULLs"
+    },
+    {
+      "check_name": "endpoint_null_count",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 314,
+      "threshold": 0,
+      "message": "endpoint: 314 NULLs"
+    },
+    {
+      "check_name": "method_null_count",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 314,
+      "threshold": 0,
+      "message": "method: 314 NULLs"
+    },
+    {
+      "check_name": "status_null_count",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 313,
+      "threshold": 0,
+      "message": "status: 313 NULLs"
+    },
+    {
+      "check_name": "response_time_ms_null_count",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 313,
+      "threshold": 0,
+      "message": "response_time_ms: 313 NULLs"
+    },
+    {
+      "check_name": "user_id_null_count",
+      "category": "completeness",
+      "status": "WARN",
+      "value": 190,
+      "threshold": 0,
+      "message": "user_id: 190 NULLs"
+    }
+  ]
+}

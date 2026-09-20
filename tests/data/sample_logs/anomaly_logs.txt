@@ -1,0 +1,18 @@
+2026-09-20 10:15:32,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=100 | user_id=U1024
+2026-09-20 10:15:33,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=120 | user_id=U1025
+2026-09-20 10:15:34,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=110 | user_id=U1026
+2026-09-20 10:15:35,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=105 | user_id=U1027
+2026-09-20 10:15:36,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=90 | user_id=U1028
+2026-09-20 10:15:37,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=95 | user_id=U1029
+2026-09-20 10:15:38,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=108 | user_id=U1030
+2026-09-20 10:15:39,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=102 | user_id=U1031
+2026-09-20 10:15:40,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=115 | user_id=U1032
+2026-09-20 10:15:41,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=112 | user_id=U1033
+2026-09-20 10:15:42,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=107 | user_id=U1034
+2026-09-20 10:15:43,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=98 | user_id=U1035
+2026-09-20 10:15:44,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=103 | user_id=U1036
+2026-09-20 10:15:45,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=118 | user_id=U1037
+2026-09-20 10:15:46,000 | INFO | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=200 | response_time_ms=111 | user_id=U1038
+2026-09-20 10:15:47,000 | ERROR | API_REQUEST | service=auth | endpoint=/api/login | method=POST | status=500 | response_time_ms=9500 | user_id=U1039
+2026-09-20 10:15:48,000 | ERROR | DATABASE_ERROR | service=orders | error=Connection refused | query_time_ms=10000
+2026-09-20 10:15:49,000 | ERROR | AUTH_FAILURE | user_id=U9999 | reason=account_locked
